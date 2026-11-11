@@ -1,0 +1,74 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+/* cores */
+--green: hsl(75, 94%, 57%);
+--white: hsl(0, 0%, 100%);
+--grey700: hsl(0, 0%, 20%);
+--grey800: hsl(0, 0%, 12%);
+--grey900: hsl(0, 0%, 8%);
+/* fontes */
+--font-regular:normal 400 14px 'Intel', Arial, Sans-serif;
+--font-semibold:normal 600 14px 'Intel', Arial, Sans-serif;
+--font-bold:normal 700 1.5rem 'Intel', Arial, Sans-serif;
+}
+body {
+    display: grid;
+    place-items:center;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--grey900);
+    color: var(--white);
+}
+main {
+    background: var(--grey800);
+    padding: clamp(1.5rem, 5vw, 2.5rem);    
+    text-align: center;
+    border-radius: 1rem;
+    width: clamp(20rem, 26vw, 27rem);
+}
+.content img {
+    width: 6rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.content h1 {
+    font: var(--font-bold);
+    margin-bottom: .5rem;
+}
+.content span {
+    font: var(--font-semibold);
+    color: var(--green);
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+.content p {
+    font: var(--font-regular);
+    margin-bottom: 2rem;
+}
+nav ul,li {
+    list-style-type: none;
+}
+li {
+    margin-top: 1rem;
+}
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    padding: .8rem;
+    display: block;
+    background: var(--grey700);
+    font: var(--font-semibold);
+    border-radius: 8px;
+    cursor: none;
+}
+nav a:hover {
+    color: var(--grey900);
+    background: var(--green);
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face  {
+  font-family: 'hankenGrotesk';
+  src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  /* colors */
+  --color-light-red: #ff5757;
+  --color-orangey-yellow: #ffb01f;
+  --color-green-teal: #00bd91;
+  --color-gobalt-blue: #1125d4;
+  
+  /* gradients */
+  --gradient-background: linear-gradient(to bottom, #7857ff, #2e2be9);
+  --gradient-circle: linear-gradient(to bottom, #4e21ca, #2421ca00);
+  
+  --color-violet-blue: #4e21ca; 
+  --color-persian-blue: #2421ca00; /* (circle) */
+  
+  /* neutral */
+  --color-white: #fff;
+  --color-pale-blue: #ebf1ff;
+  --color-light-lavender: #c8c7ff;
+  --dark-gray-blue: #303b5a;
+  
+  /* fonts */
+  --fonte-sans: 'hankenGrotesk', Sans-serif;
+  
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+}
+
+body {
+  font-family: var(--fonte-sans);
+  font-weight: var(--fw-medium);
+  background-color: var(--color-pale-blue);
+}
+@media screen and (min-width:40rem){
+  body {
+    display: grid;
+    place-items:center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+}

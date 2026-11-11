@@ -1,0 +1,102 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+--gold500: hsl(31, 77%, 52%);
+--cyan800: hsl(184, 100%, 22%);
+--green950: hsl(179, 100%, 13%);
+
+--transparent-white: hsla(0, 0%, 100%, 0.75);/*(paragraphs)*/
+--gray100: hsl(0, 0%, 95%);/*(background, headings, buttons)*/
+
+--font-regular:normal 400 15px 'Lexend Deca', Arial, Sans-serif;
+--font-semibold:normal 700 2.2rem 'Big Shoulders', Arial, Sans-serif;
+}
+body {
+    display: grid;
+    place-items:center;
+    place-content:center;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--gray100);
+}
+h1 {
+  position: absolute;
+  left: -9999%;
+}
+main {
+    border-radius: .5rem;
+    overflow: hidden;
+}
+section {
+    background: gray;
+    color: var(--gray100);
+    height: 28rem;
+    width: 20rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 3rem;
+}
+section img {
+    width: 4rem;
+}
+section h2 {
+    font: var(--font-semibold);
+    text-transform: uppercase;
+}
+section p {
+    color: var(--transparent-white);
+    font: var(--font-regular);
+    line-height: 1.7rem;
+}
+section button {
+    background: var(--gray100);
+    border: none;
+    font: var(--font-regular);
+    align-self: flex-start;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    border:2px solid var(--gray100);
+}
+section button:hover {
+    background:transparent;
+    color: var(--gray100);
+    cursor: pointer;
+}
+.sedans {
+    background: var(--gold500);
+}
+.suvs {
+    background: var(--cyan800);
+}
+.luxury {
+    background: var(--green950);
+}
+.btn1 {
+    color: var(--gold500);
+}
+.btn2 {
+    color: var(--cyan800);
+}
+.btn3 {
+    color: var(--green950);
+}
+@media screen and (min-width:48rem){
+    main {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    section {
+        width: 19rem;
+        height: 31rem;
+        padding: 2.9rem;
+    }
+    section button {
+       margin-top: 4rem;
+    }
+}

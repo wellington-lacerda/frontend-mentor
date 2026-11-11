@@ -1,0 +1,13 @@
+{
+  "name": "expenses-chart-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Expenses chart component coding challenge](preview.jpg)",
+  "main": "assets/js/script.js",
+  "type": "module",
+  "scripts": {
+    "start": "node assets/js/script.js"
+  },
+  "keywords": [],
+  "author": "Wellington de Lacerda",
+  "license": "ISC"
+}

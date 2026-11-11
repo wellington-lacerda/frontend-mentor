@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Hotel booking confirmation page</title>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <img src="assets/images/logo.svg" alt="logo-web-site">
+      <button type="button" class="menu">
+        <img src="assets/images/icon-menu.svg" alt="menu para abrir e fechar a navegação"> 
+      </button>
+    </div>
+    <!-- Sidebar starts -->
+    <div class="guest-navegation">
+      <!-- Guest navigation -->
+      
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <img src="assets/images/icon-bed.svg" alt="icon-bed">
+              <span>Your stay</span>
+              <span class="notifi">1</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/icon-house.svg" alt="icon-house">
+              <span>The house</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/icon-pin.svg" alt="icon-pin">
+              <span>Around town</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/icon-breakfast-outline.svg" alt="icon-breakfast">
+              <span>Breakfast</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/icon-mail.svg" alt="icon-mail">
+              <span>Messages</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Local weather -->
+      <div class="local-weather">
+        <div class="note">
+          <span class="cassis">Today in Cassis</span>
+          <strong>27°</strong>
+          <span>Sunny · light breeze</span>
+        </div>
+        <div class="status">
+          <span>Est. 1987</span>
+          <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+          <span>© 2026 Maison Soleil</span>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar ends -->
+  </header>
+  <!-- Main content starts -->
+  <main>
+   <section class="title">
+    <div class="ascess">
+      <div class="txt">
+         <span>Booking · Confirmed</span>
+         <h1>
+           Bienvenue,
+         <strong>Lucia.</strong>
+       </h1>
+      </div>
+      
+      <div class="btns">
+        <button type="button" class="btn print">
+         Print receipt
+        </button>
+        <button type="button" class="btn add">
+         Add to calendar
+        </button>
+      </div>
+     </div>
+   </section>
+   <!-- Booking cards start -->
+   <section class="booking-cards">
+     <!-- Receipt card -->
+     <div class="receipt-card card">
+       
+       <div class="container flex-row row">
+         <div class="box">
+           <span>Receipt</span>
+         </div>
+         <div class="box-date">
+           <span>№ MS-2026</span>
+           <span>0421-AH</span>
+         </div>
+       </div>
+       <strong class="stay">Your stay</strong>
+       
+       <div class="container flex-row flex-bord">
+         <div class="box-check">
+           <span class="check">Check in</span>
+           <strong>25 Apr</strong>
+           <span class="date">Saturday · 15:00</span>
+         </div>
+         <div class="box-check">
+           <span class="check">Check out</span>
+           <strong>29 Apr</strong>
+           <span class="date">Wednesday · 11:00</span>
+         </div>
+       </div>
+       
+       <div class="container">
+         <div class="box-prices">
+           <span>Room · La Garrigue · 4 nights</span>
+           <span>€ 620.00</span>
+         </div>
+         <div class="box-prices">
+           <span>Breakfast · 2 guests</span>
+           <span>€ 96.00</span>
+         </div>
+         <div class="box-prices">
+           <span>Tourist tax</span>
+           <span>€ 14.40</span>
+         </div>
+       </div>
+       
+       <div class="container">
+         <div class="box-tot">
+           <span>Total paid</span>
+           <strong>€ 730.40</strong>
+         </div>
+       </div>
+       
+       <div class="container flex-row">
+         <span class="line">Paid · Wise · GBP</span>
+         <img src="assets/images/icon-barcode.svg" alt="icon-barcode">
+       </div>
+       
+     </div>
+     <!-- Barcode image -->
+     <img src="assets/images/illustration-sun.svg"  alt="illustration-sun" class="sun">
+     <!-- next -->
+     <!-- Note from host card -->
+     <div class="note-host-card card">
+       
+       <div class="note-start">
+         <span>Welcome card</span>
+         <img src="assets/images/icon-sun.svg" alt="icon-sun">
+       </div>
+       <div class="note-host">
+         <h2>
+           A note from your host, 
+           <strong>Margaux.</strong>
+         </h2>
+         <p>We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
+       </div>
+       <div class="note-end">
+         <span>Room</span>
+         <strong>La Garrigue</strong>
+       </div>
+     </div>
+     <div class="hover">
+       <img src="assets/images/icon-sparkle.svg" alt="icon-sparkle">
+       <span>HOVER TO FAN</span>
+       <img src="assets/images/icon-sparkle.svg" alt="icon-sparkle">
+     </div>
+   </section>
+   <!-- Booking cards end -->
+   
+   <!-- Guest info row starts -->
+   <section class="guest-info">
+     <!-- Arrival -->
+     <div class="card-info">
+       <div class="guest-row arrival">
+         <div class="guest-line">
+           <img src="assets/images/icon-key.svg" alt="icon-key">
+           <strong>Arrival</strong>
+         </div>
+         <span>01</span>
+       </div>
+       <h2>Check-in from 15:00</h2>
+       <span>Sat, 25 April</span>
+       <p>Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+     </div>
+     <!-- Wifi -->
+     <div class="card-info">
+       <div class="guest-row wifi">
+         <div class="guest-line">
+           <img src="assets/images/icon-wifi.svg" alt="icon-wifi">
+           <strong>Wifi</strong>
+         </div>
+         <span>02</span>
+       </div>
+       <h2>Le Soleil · Guest</h2>
+       <span>Password below</span>
+       <div class="lead">
+         <div class="base-row">
+           <span class="txt">Network</span>
+           <span>Le Soleil · Guest</span>
+         </div>
+         <div class="base-row">
+           <span class="txt">Password</span>
+           <div class="pass-line">
+             <span>soleil-2026</span>
+             <button type="button">Copy</button>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- Breakfast -->
+     <div class="card-info">
+       <div class="guest-row breakfast">
+         <div class="guest-line">
+           <img src="assets/images/icon-breakfast.svg" alt="icon-breakfast">
+           <strong>Breakfast</strong>
+         </div>
+         <span>03</span>
+       </div>
+       <h2>Served 8 - 10:30</h2>
+       <span>On the terrace</span>
+       <p>Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+     </div>
+   </section>
+   <!-- Guest info row ends -->
+  </main>
+  <!-- Main content ends -->
+  <script src="js/script.js"></script>
+</body>
+</html>

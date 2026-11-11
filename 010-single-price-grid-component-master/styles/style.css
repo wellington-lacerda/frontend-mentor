@@ -1,0 +1,128 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+--teal500: hsl(179, 62%, 43%);
+--green400: hsl(71, 73%, 54%);
+--white: #fff;
+
+--teal100: hsl(204, 43%, 93%);
+--gray500: hsl(218, 22%, 67%);
+--shadow: #0000002e;
+
+--font-regular: normal 400 16px 'Karla', Arial, Sans-serif;
+--font-semibold: normal 700 clamp(1rem,5vw,2rem) 'Karla', Arial, Sans-serif;
+}
+body {
+    display: grid;
+    place-items:center;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--teal100);
+    color: var(--teal100);
+    font: var(--font-semibold);
+}
+main {
+    min-width: 17rem;
+    max-width: 21rem;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px var(--shadow);
+    margin: 1rem 0rem;
+}
+section {
+    background: var(--white);
+    padding: 1.7rem;
+    min-height: 10rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+section h1 {
+    font-size:clamp(1.3rem,3vw,1.5rem);
+    color: var(--teal500);
+    margin-bottom: 1.3rem;
+}
+section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+}
+section p {
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: .9rem;
+}
+.community p {
+    font-size: clamp(.9rem,3vw,1rem);
+}
+.community {
+    color: var(--gray500);
+}
+.community h2 {
+    color: var(--green400);
+    font-size: clamp(1rem,3vw,1.2rem);
+}
+.subs {
+    background: var(--teal500);
+}
+.subs .price {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 1rem;
+    align-items: center;
+}
+.subs .p {
+    font-size: 1rem;
+}
+.subs .btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 7px;
+    background: var(--green400);
+    color: var(--teal100);
+    font: var(--font-semibold);
+    font-size: .9rem;
+    border: none;
+    box-shadow: 0px 5px 15px var(--shadow);
+    margin-top: 1.3rem;
+}
+.price strong {
+    font: var(--font-semibold);
+    font-size: 2rem;
+}
+.price span {
+    font: var(--font-regular);
+    color: var(--teal100);
+    opacity: 50%;
+}
+.question {
+    background: var(--teal500);
+    opacity: 80%;
+}
+@media screen and (min-width:48rem){
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 40rem;
+    }
+    section {
+        padding: 2rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    .community {
+        width: 100%;
+    }
+    .subs {
+        width: 50%;
+    }
+    .question {
+        width: 50%;
+    }
+}

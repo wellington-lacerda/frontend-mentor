@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/var.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main>
+  <!-- Rating state start -->
+  <section class="rating-states section-active">
+     <div class="icon">
+        <img src="images/icon-star.svg" alt="icone de estrela">
+     </div>
+     <h1>How did we do?</h1>
+     <p>Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+     <form method="get" autocomplete="on">
+           <input type="radio" name="options" id="opt1" value="1">
+           <input type="radio" name="options" id="opt2" value="2">
+           <input type="radio" name="options" id="opt3" value="3">
+           <input type="radio" name="options" id="opt4" value="4">
+           <input type="radio" name="options" id="opt5" value="5">
+       <div class="box-botoes">
+           <label for="opt1" class="form-label label-normal hover-on">1</label>
+           <label for="opt2" class="form-label label-normal hover-on">2</label>
+           <label for="opt3" class="form-label label-normal hover-on">3</label>
+           <label for="opt4" class="form-label label-normal hover-on">4</label>
+           <label for="opt5" class="form-label label-normal hover-on">5</label>
+        </div>
+        <button type="submit" class="but">Submit</button>
+     </form>
+  </section>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <section class="thanks-states section-disabled">
+     <div class="image">
+        <img src="images/illustration-thank-you.svg" alt="imagem de ilustração com agradecimento">
+     </div>
+     <div class="sel">
+    <span>You selected <span class="res">0</span> out of 5</span>
+     </div>
+     <h2>Thank you!</h2>
+     <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!
+</p>
+  </section>
+  <!-- Thank you state end -->
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

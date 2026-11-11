@@ -1,0 +1,300 @@
+body {
+    font-family: var(--FF1);
+    font-weight: var(--normal);
+    background: var(--Navy900);
+    color: var(--White);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+header {
+    background: var(--Navy850) url("../images/bg-curvy-mobile.svg") no-repeat bottom center;
+    background-size: contain;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 1rem;
+    height: 25rem;
+}
+.logo img {
+    width: 5rem;
+}
+.nav-top ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap:1rem;
+    list-style-type: none;
+}
+a {
+    color: var(--White);
+    text-decoration: none;
+    font-size: var(--FS);
+}
+.nav-top a:hover {
+    text-decoration: underline;
+    font-weight: var(--semibold);
+}
+main {
+    padding: 2rem;
+    max-width: 90rem;
+    margin: auto;
+    text-align: center;
+}
+main h1 {
+    font-size: clamp(1.6rem,5vw,2rem);
+    margin-bottom: 1.5rem;
+    line-height: 2.5rem;
+}
+main h2 {
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+}
+main p {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    font-size: var(--FS);
+}
+aside p {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    font-size: var(--FS);
+}
+section {
+    margin-bottom: 10rem;
+}
+img.bg-illustration {
+    width: 100%;
+}
+button.btn {
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 15rem;
+    background: var(--Cyan500);
+    color: var(--White);
+    border: none;
+    font-weight: var(--semibold);
+}
+.but:hover {
+    background: var(--Teal200);
+}
+.hero {
+    margin-top: -22rem;
+}
+.hero-txt p {
+    font-size: var(--FSP);
+    margin-bottom: 2rem;
+}
+.card-files div {
+    margin-bottom: 6rem;
+}
+.productive {
+    text-align: left;
+}
+.productive-txt a {
+    color: var(--Teal200);
+    font-size: .8rem;
+    text-decoration: none;
+    border-bottom: 2px solid var(--Teal200);
+    padding-bottom: .5rem;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .5rem;
+}
+.productive-txt a:hover {
+    color: var(--White);
+    border-color: var(--White);
+}
+.productive-txt svg {
+    color: #62E0D9;
+}
+.productive-txt a:hover svg {
+    color: var(--White);
+}
+.card-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    position: relative;
+}
+.card-group .card {
+    padding: clamp(1.5rem,5vw,2rem);
+    border-radius: 7px;
+    background: var(--Navy800);
+    flex: 0 1 22rem;
+    z-index: 1;
+}
+.card-group .quote {
+    position: absolute;
+    left: 0;
+    top: -1.5rem;
+    width: clamp(1.5rem,5vw,3rem);
+    z-index: 0;
+}
+.card-group p {
+    text-align: left;
+    font-size: var(--small);
+}
+.card-status {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1rem;
+}
+.card-status img {
+    width: 2rem;
+    border-radius: 50%;
+}
+.card-txt {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    font-size: .8rem;
+    gap:.4rem;
+}
+aside {
+    margin-bottom: -11rem;
+    margin-top: -4rem;
+    z-index: 2;
+    padding: 2rem;
+    max-width: 90rem;
+    align-self: center;
+}
+form {
+    background: var(--Navy850);
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    gap:1rem;
+    box-shadow: 0 0 8px #0000004f;
+}
+.form-control {
+    display: flex;
+    flex-flow: row wrap;
+    gap:1rem;
+}
+.box-input {
+    width: 100%;
+    text-align: left;
+}
+.form-control label {
+    margin: -.8rem 0 -2rem 2rem;
+    font-size: .8rem;
+    color: var(--Red500);
+    display: none;
+}
+.form-control label.error {
+    display: inline;
+}
+.input-email {
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    background: var(--White);
+}
+.input-email input {
+    outline: none;
+    border: none;
+    color: var(--Navy850);
+    width: 100%;
+}
+button.btn-submit {
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 100%;
+    background: var(--Cyan500);
+    color: var(--White);
+    border: none;
+    font-weight: var(--semibold);
+    align-self: flex-start;
+}
+footer {
+    background: var(--Navy950);
+    padding: 2rem;
+    padding-top: 11rem;
+}
+.card-footer {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.logo-footer {
+    margin-bottom: 2rem;
+}
+.icon-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: stretch;
+    margin: .4rem 0;
+}
+.card-footer-anddress {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 1.5rem;
+}
+.card-footer-contact {
+    display: flex;
+    flex-flow: column nowrap;
+    gap:2rem;
+    margin-bottom: 2rem;
+}
+.card-footer-contact div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 1rem;
+}
+footer p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+.nav-bottom {
+    margin: 2rem 0;
+}
+.nav-bottom ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 2rem;
+}
+.nav-bottom li {
+    margin-bottom: 1rem;
+}
+.nav-bottom a {
+    font-size: 1.1rem;
+}
+.nav-bottom a:hover {
+    font-weight: var(--semibold);
+}
+.social-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.social-footer a {
+    font-size: 1.2rem;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.social-footer a:hover {
+    color: var(--Teal200);
+    border-color: var(--Teal200);
+}

@@ -1,0 +1,13 @@
+body {
+    background: var(--purple100) url("../images/background-pattern-desktop.svg") no-repeat top center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+main {
+    width:36rem ;
+    padding: 0 2.8rem;
+}
+main h2 {
+    font-size: 1.2rem;
+    width: 30rem;
+}

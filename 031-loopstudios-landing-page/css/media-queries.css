@@ -1,0 +1,123 @@
+body {
+    max-width: 90rem;
+    margin: auto;
+}
+header {
+    background: url("../images/desktop/image-hero.jpg") no-repeat center center;
+    grid-template-columns: 10% 38rem auto 10%;
+}
+.menu {
+    display: none;
+}
+main {
+    padding: 0;
+}
+.card-header {
+    grid-column: 2 / 4;
+}
+.card-header nav {
+    position: static;
+    padding: 0; 
+    width: auto;
+    background-color: transparent;
+    height: 100%;
+}
+ul {
+    flex-flow: row wrap;
+}
+.card-header a {
+    font-family: var(--ff-alata);
+    font-size: 1rem;
+    font-weight: var(--fw-normal);
+    text-transform: none;
+}
+.box-title {
+    grid-column: 2 / 3;
+}
+.card-info {
+    display: grid;
+    grid-template-columns: 10% 2fr 10% 2fr 10%;
+    grid-template-rows: 1fr 1fr 2fr 1fr ;
+    margin: 0;
+}
+.card-info picture {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    width: auto;
+}
+.card-info .txt {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+    background-color: var(--color-white);
+    padding: 5rem 0 0 5rem;
+    text-align: left;
+    max-width: 35rem;
+}
+.card-info h2 {
+    font-size: 3rem;
+}
+.card-create {
+    grid-template-columns: 1% repeat(4, 1fr) 1%;
+    grid-template-rows: 6rem 30rem 30rem 6rem;
+    padding: 0;
+}
+.card-create .card {
+    height: 100%;
+}
+.card-create h2 {
+    text-align: left;
+    font-size: 2.7rem;
+    grid-area: 1 / 2 / 2 / 4;
+}
+.card-create a.see-all {
+    grid-area: 1 / 5 / 2 / 6;
+    align-self: start;    
+    display: block;
+    margin: 0;
+}
+.deep-earth {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url("../images/desktop/image-deep-earth.jpg");
+ }
+.night-arcade {
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url("../images/desktop/image-night-arcade.jpg");
+}
+.soccer-team-VR {
+    grid-area: 2 / 4 / 3 / 5;
+    background-image: url("../images/desktop/image-soccer-team.jpg");
+}
+.the-grid {
+    grid-area: 2 / 5 / 3 / 6;
+    background-image: url("../images/desktop/image-grid.jpg");
+}
+.from-up-above-VR {
+    grid-area: 3 / 2 / 4 / 3;
+    background-image: url("../images/desktop/image-from-above.jpg");
+}
+.pocket-borealis {
+    grid-area: 3 / 3 / 4 / 4;
+    background-image: url("../images/desktop/image-pocket-borealis.jpg");
+}
+.the-curiosity {
+    grid-area: 3 / 4 / 4 / 5;
+    background-image: url("../images/desktop/image-curiosity.jpg");
+}
+.make-it-fisheye {
+    grid-area: 3 / 5 / 4 / 6;
+    background-image: url("../images/desktop/image-fisheye.jpg");
+}
+footer {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (min-width:65rem) {
+  .card-create {
+      grid-template-columns: 8% repeat(4, 1fr) 8%;
+  }
+  .card-create span {
+    font-size: 2.3rem;
+    max-width: 13rem;
+  }
+}

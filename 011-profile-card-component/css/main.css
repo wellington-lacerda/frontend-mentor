@@ -1,0 +1,82 @@
+@charset 'UTF-8';
+
+body {
+    display: grid;
+    place-items:center;
+    place-content:center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background: var(--blue600);
+    font: var(--font-var);
+    color: var(--navy950);
+}
+img.bg1 {
+    position: fixed;
+    top: clamp(0,100vh,30rem);
+    left: clamp(0,100vw,50rem);
+    transform: translate(-50%,-50%);
+    width: clamp(32rem,100vw,70rem);
+}
+main {
+    background: var(--white);
+    z-index: 1;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.card-imgs {
+    position: relative;
+}
+.card-imgs .perfil {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    border: 4px solid var(--white);
+}
+.card-dates {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+.card-dates .dates {
+    font-size: var(--fs);
+}
+.dates .age {
+    color: var(--gray500);
+    font-weight: var(--fw-regular);
+}
+.card-dates p {
+    color: var(--gray500);
+    font-size: .9rem;
+    font-weight: var(--fw-regular);
+}
+.card-follows {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    border-top: 1px solid var(--gray100);
+}
+.card-follows div {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.card-follows strong {
+    font-size: var(--fs);
+}
+.card-follows span {
+    font-size: .8rem;
+    color: var(--gray500);
+    font-weight: var(--fw-regular);
+}
+img.bg2 {
+    position: fixed;
+    bottom: clamp(0,100vh,30rem);
+    right: clamp(0,100vw,50rem);
+    transform: translate(50%,50%);
+    width: clamp(32rem,100vw,70rem);
+}

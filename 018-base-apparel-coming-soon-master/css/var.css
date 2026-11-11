@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+:root {
+/* COLORS */
+--pink100: hsl(0, 66%, 90%);
+--pink400: hsl(0, 36%, 70%);
+--red500: hsl(0, 93%, 68%);
+
+/* Neutral */
+--shadow:#00000021;
+--gray900: hsl(0, 6%, 24%);
+
+/* Gradients */
+
+--line1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+--line2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+/* FONTS */
+--FS:16px;
+--FF:'Josefin Sans';
+--regular:300 ;
+--medium:400 ;
+--semibold:600 ;
+}

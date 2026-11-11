@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+/* cores */
+--white: hsl(0, 0%, 100%);
+--slate300: hsl(212, 45%, 89%);
+--slate500: hsl(216, 15%, 48%);
+--slate900: hsl(218, 44%, 22%);
+/* fontes */
+--font-regular:normal 400 16px 'Outfit', Arial, Sans-serif;
+--font-bold:normal 700 1.3rem 'Outfit', Arial, Sans-serif;
+}
+body {
+    display: grid;
+    place-items:center;
+    width: 100vw;
+    min-height: 100vh;
+    font: var(--font-regular);
+    background: var(--slate300);
+}
+main {
+    background: var(--white);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+section {
+    width: 19rem;
+}
+.image img {
+    border-radius: .7rem;
+    width: 100%;
+}
+.content {
+    padding: 1rem;
+}
+.content h1 {
+    font: var(--font-bold);
+    color: var(--slate900);
+    margin-bottom: 1rem;
+}
+.content p {
+    font: var(--font-regular);
+    color: var(--slate500);
+}

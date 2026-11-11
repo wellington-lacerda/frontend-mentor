@@ -1,0 +1,39 @@
+body {
+    background: var(--purple700) url("../assets/images/bg-desktop.svg") no-repeat left center;
+}
+header {
+    margin-bottom: 3rem;
+}
+main {
+    grid-template-rows: 100%;
+    grid-template-columns: 60% 40%;
+    gap:1rem;
+    max-height: 85%;
+}
+section {
+    place-content:start;
+}
+.image {
+    object-fit: cover;
+}
+.content {
+    margin-top: 2rem;
+    text-align: left;
+    max-width: 30rem;
+}
+.content p {
+    padding: 0;
+}
+.content .btn {
+    margin: 0;
+}
+nav {
+    justify-content: flex-end;
+}
+nav a {
+    font-size: 1.2rem;
+}
+footer {
+    text-align: right;
+    margin-top: 0;
+}

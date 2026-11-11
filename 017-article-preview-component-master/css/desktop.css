@@ -1,0 +1,35 @@
+main {
+    display: grid;
+    grid-template-columns: 18rem 28rem;
+    position: relative;
+    overflow: visible;
+}
+.image {height: auto;}
+.image img {border-radius: .8rem 0 0 .8rem;}
+.content {position: static;}
+.container {margin: 0;}
+.content p {margin-bottom: 1rem;}
+.container-fluid {
+    width: auto;
+    left: auto;
+    right: -10%;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    bottom: 30%;
+    justify-content: center;
+    gap: 1rem;
+}
+.container-fluid::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3rem;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--Very-Dark-Grayish-Blue);
+}
+#icon {display: none;}

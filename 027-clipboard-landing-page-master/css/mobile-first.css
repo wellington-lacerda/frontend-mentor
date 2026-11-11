@@ -1,0 +1,141 @@
+@charset 'UTF-8';
+body {
+    font-family: var(--FF);
+    font-weight: var(--normal);
+    color: var(--Gray700);
+    width: 100%;
+    min-height: 100vh;
+}
+header {
+    position: relative;
+}
+header picture img {
+    width: 100%;
+}
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+}
+main {
+    padding: 2rem;
+    text-align: center;
+}
+main section {
+    margin-bottom: 8rem;
+}
+main p {
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    color: var(--Gray500);
+}
+main h1 {
+    font-size: clamp(2rem,5vw,2.5rem);
+}
+main h2 {
+    font-size: clamp(1.6rem,5vw,2rem);
+    margin-bottom: 1.5rem;
+}
+.downloads h1 {
+    margin-bottom: 1.5rem;
+}
+.downloads .links-download {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.downloads a.download {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-weight: var(--semibold);
+    font-size: var(--FS);
+    color: var(--White);
+    border-bottom: 4px solid transparent;
+}
+.downloads a.download:hover {
+    opacity: 50%;
+}
+.downloads a.forIOS {
+    background: var(--Green500);
+    border-bottom-color: var(--Green900);
+}
+.downloads a.forMAC {
+    background: var(--Blue100);
+    border-bottom-color: var(--Blue600);
+}
+.keep-track img {
+    width: 100%;
+    margin: 2rem 0;
+}
+.keep-track strong {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+.clip-board img {
+    width: 100%;
+    margin-top: 2rem;
+}
+.icons .list-icon {
+    margin-top: 6rem;
+}
+.icons img {
+    margin-bottom: 3rem;
+}
+.logos {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
+}
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: var(--Gray50);
+    gap:3rem;
+    padding: 3rem 0;
+}
+.campo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+.image-logo img {
+    width: 3.5rem;
+}
+.nav-link ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.nav-link a {
+    color: var(--Gray700);
+    font-size: var(--FS);
+}
+.nav-link a:hover {
+    color: var(--Green500);
+}
+.icons-social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.icons-social svg {
+    fill:#4C545C;
+}
+.icons-social svg:hover{   
+    fill:var(--Green500);
+}

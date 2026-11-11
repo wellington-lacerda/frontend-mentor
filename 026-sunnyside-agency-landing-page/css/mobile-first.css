@@ -1,0 +1,273 @@
+@charset 'UTF-8';
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: var(--FF1);
+    font-weight: var(--semibold);
+    color: var(--Grey600);
+    background: var(--White);
+}
+/* PARTE DO HEADER */
+header {
+    height: 34.4rem;
+    width: 100%;
+    background: var(--White) url("../images/mobile/image-header.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 1.5rem;
+    overflow-x: hidden;
+}
+header .btn-menu {
+    border: none;
+    background: transparent;
+}
+header .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header .navbar {
+    position: absolute;
+    top: 7rem;
+    background: var(--White);
+    width: 100%;
+    transition: .5s;
+}
+header .navbar::after {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid var(--White);
+    border-top: 1.5rem solid transparent;
+}
+header .navbar .btn-link {
+    border: none;
+    font-family: var(--FF2);
+    padding: 1.2rem 2rem;
+    border-radius: 2rem;
+    color: var(--Grey950);
+    background: var(--Yellow500);
+    font-weight: var(--negrito);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+header ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 3rem;
+}
+header .navbar a {
+    color: var(--Grey550);
+    margin-bottom: 2rem;
+    display: block;
+    font-size: 1.1rem;
+}
+header .navbar-on {
+    right: 0;
+}
+header .navbar-off {
+    right: -60rem;
+}
+header .card-title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap:clamp(2rem,5vw,5rem);
+    margin-top: -2rem;
+}
+header h1 {
+    color: var(--White);
+    font-weight: var(--negrito);
+    font-size: clamp(3rem,5vw,4rem);
+    text-transform: uppercase;
+    font-family: var(--FF2);
+    letter-spacing: .2rem;
+    text-align: center;
+}
+/* PARTE DO MAIN */
+main .grids .image-egg {
+    background:var(--Yellow500);
+}
+main .grids .image-cup {
+    background: var(--Red400);
+}
+main .grids .card-image img {
+    width: 100%;
+    object-fit: cover;
+}
+main .grids .card-text {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--White);
+}
+main .grids .card-text h2 {
+    color: var(--Grey950);
+}
+main .grids h2 {
+    font-family: var(--FF2);
+    font-weight: var(--negrito);
+    margin-bottom: 2rem;
+    font-size: clamp(2rem,5vw,2.7rem);
+}
+main .grids .card-text p {
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+main .grids .card-text a {
+    margin-bottom: 1rem;
+    display: block;
+    color: var(--Grey950);
+    font-size: 1.1rem;
+    font-family: var(--FF2);
+    font-weight: var(--negrito);
+    z-index: 1;
+}
+main .card-text .line-link {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 7rem;
+}
+main .card-text .line {
+    width: 7rem;
+    height: .5rem;
+    margin-top: -1.6rem;
+    border-radius: 1rem;
+    z-index: 0;
+}
+main .card-text .cor1 {
+    background: var(--Yellow200);
+}
+main .card-text .cor2 {
+    background: var(--Red200);
+}
+main .card-text .line-link:hover .cor1 {
+    background: var(--Yellow500);
+}
+main .card-text .line-link:hover .cor2 {
+    background: var(--Red400);
+}
+main .grids .card-back {
+    height: 38.5rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+main .grids .card-back p {
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+main .grids .grafic-design {
+    background: url("../images/mobile/image-graphic-design.jpg") no-repeat top center;
+    background-size: cover;
+    color: var(--Green800);
+}
+main .grids .photography {
+    background: url("../images/mobile/image-photography.jpg") no-repeat top center;
+    background-size: cover;
+    color: var(--Blue800);
+}
+.clients-testimonials {
+    padding: 4rem 2rem 0 2rem;
+    background: var(--White);
+    display: grid;
+    place-content:center;
+    place-items:center;
+    text-align: center;
+}
+.clients-testimonials article {
+    display: flex;
+    place-content:center;
+    flex-flow: row wrap;
+}
+main .text-center h2 {
+    text-transform: uppercase;
+    font-size: var(--FS);
+    font-family: var(--FF2);
+    color: var(--Grey400);
+    font-weight: var(--bold);
+    letter-spacing: .2rem;
+    margin-bottom: 3rem;
+}
+main .client {
+    min-width:17rem ;
+    max-width: 21rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+main .client img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+main .client p {
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+main .client strong {
+    font-family: var(--FF2);
+    margin-bottom: .8rem;
+    color: var(--Grey950);
+    font-weight: var(--negrito);
+}
+main .client span {
+    font-size: .8rem;
+    color: var(--Grey400);
+    margin-bottom: 4rem;
+}
+main .figures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+main .figures img {
+    width: 100%;
+    height: 100%;
+}
+/* PARTE DO FOOTER */
+footer {
+    background: var(--Green300);
+    color: var(--Green500);
+    display: grid;
+    place-content:center;
+    place-items:center;
+    padding:4rem 2rem 0 2rem;
+}
+footer .logo-footer {
+    width: 11rem;
+    margin-bottom: 2rem;
+}
+footer .nav-link {
+    margin-bottom: 5rem;
+}
+footer .nav-link ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:2rem;
+}
+footer .nav-link a {
+    color: var(--Green500);
+}
+footer .social-link {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem;
+}
+footer a:hover {
+    color: var(--White);
+}

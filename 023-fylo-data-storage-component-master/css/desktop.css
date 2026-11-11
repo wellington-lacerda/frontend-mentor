@@ -1,0 +1,28 @@
+body {
+    background: var(--Blue950) url("../images/bg-desktop.png") no-repeat bottom center;
+}
+main {
+    display: grid;
+    grid-template-columns:26% 38%;
+}
+.files {
+    padding-right: 2.5rem;
+}
+.box {
+    max-width: 100%;
+}
+.gigabyte {
+    bottom: 85%;
+    padding: 1.5rem;
+    transform: translateX(0);
+    width: auto;
+    left: 60%;
+}
+.gigabyte::after {
+    content: '';
+    position: absolute;
+    border-left: 2rem solid transparent;
+    border-top: 2rem solid var(--White);
+    top: 90%;
+    right: 0;
+}

@@ -1,0 +1,78 @@
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main .downloads {
+    width: 40rem;
+}
+.downloads .links-download {
+    column-gap: 2rem;
+}
+.downloads a.download {
+    width: auto;
+    padding: 1rem 3rem;
+}
+.keep-track .txt1 {
+    width: 40rem;
+    margin: auto;
+}
+.keep-track .visu {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    column-gap: 6rem;
+}
+.keep-track .image-tv {
+    width: 50%;
+    margin-left: -5rem;
+}
+.keep-track .txt2 {
+    text-align: left;
+    width: 21rem;
+}
+.clip-board .txt1 {
+    width: 40rem;
+    margin: auto;
+}
+.icons .list-icon {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.list-icon div {
+    width: 28%;
+    height: 15rem;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    place-content:space-between;
+    place-items:center;
+}
+.list-icon div p {
+    margin-bottom: auto;
+}
+.logos {
+    flex-flow: row wrap;
+}
+footer {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 3rem 1rem;
+    column-gap: 3rem;
+}
+.campo {
+    flex-flow: row wrap;
+    column-gap: 6rem;
+}
+.nav-link ul {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 35rem;
+    gap:2rem 2rem;
+}
+.nav-link li {
+    width: 10rem;
+}

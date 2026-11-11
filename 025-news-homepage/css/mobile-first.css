@@ -1,0 +1,169 @@
+@charset 'UTF-8';
+.desligado {
+    overflow-x: hidden;
+}
+body {
+    background: var(--Off-white);
+    font-family: var(--FF);
+    font-weight: var(--normal);
+    color: var(--Very-dark-blue);
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+    overflow-x: hidden;
+    position: relative;
+}
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    height: 3rem;
+}
+header .logo img {
+    width: 3rem;
+}
+.menu {
+    z-index: 4;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    transition: 1s;
+    background: var(--Off-white);
+    width: 70%;
+    padding: 8rem 1.5rem 1.5rem 1.5rem;
+    min-height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: 3;
+}
+.back {
+    position: absolute;
+    opacity: 50%;
+    width: 100%;
+    min-height: 100%;
+    transition: 1s;
+    right: 0;
+    top: 0;
+}
+.fundo-off {
+    background: transparent;
+    z-index: -1;
+}
+.fundo-on {
+    background: var(--Very-dark-blue);
+    z-index: 2;
+}
+.navbar ul {
+    list-style-type: none;
+}
+.navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 1rem 1rem .8rem 0;
+    color: var(--Dark-grayish-blue);
+    font-weight: var(--bold);
+    font-size: 1.1rem;
+}
+.navbar a:hover {
+    color: var(--Soft-red);
+}
+.nav-off {
+    right: -100%;
+    opacity: 0;
+}
+.nav-on {
+    right: 0;
+    opacity: 100%;
+}
+main .image {
+    margin-bottom: 1rem;
+}
+main .image img {
+    width: 100%;
+}
+main h1 {
+    font-weight: var(--extrabold);
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    line-height: 3rem;
+}
+main p {
+    font-size: var(--FS);
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5rem;
+}
+.txt .btn {
+    display: inline-block;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border: none;
+    background: var(--Soft-red);
+    font-weight: var(--extrabold);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: var(--Very-dark-blue);
+}
+.txt .btn:hover {
+    background: var(--Very-dark-blue);
+    color: var(--Off-white);
+    cursor: pointer;
+}
+main .new {
+    background: var(--Very-dark-blue);
+    padding: 1rem;
+    color: var(--Off-white);
+    margin: 2rem 0 4rem 0;
+}
+main .new p {
+    color: var(--Grayish-blue);
+}
+main .new strong {
+    margin-bottom: 2rem;
+    color: var(--Soft-orange);
+    font-size: 2rem;
+    display: block;
+}
+main .new h2 {
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+main .new h2:hover {
+    color: var(--Soft-orange);
+    cursor: pointer;
+    display: inline-block;
+}
+main .new hr {
+    color: var(--Grayish-blue);
+    margin: 2rem 0;
+}
+main .options img {
+    width: 6rem;
+}
+main .opt {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:1rem;
+    margin-bottom: 2rem;
+}
+main .opt strong {
+    font-size: 2rem;
+    color: var(--Soft-red);
+    display: block;
+}
+main .opt h2:hover {
+    color: var(--Soft-red);
+    cursor: pointer;
+    display: inline-block;
+}
+main .opt h2 {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    color: var(--Very-dark-blue);
+    font-weight: var(--extrabold);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/var.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/desktop.css" media="(min-width:48rem)">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+   <main>
+       <!-- START SECTION LOGO -->
+      <section class="logo">
+         <img src="assets/images/logo.svg" alt="Imagem da logo BASE APPAREL">
+      </section>
+      <!-- END SECTION LOGO -->
+      <section class="image">
+        <picture>
+           <source media="(min-width:48rem)" srcset="assets/images/hero-desktop.jpg" type="image/jpg">
+           <img src="assets/images/hero-mobile.jpg" alt="imagem de uma mulher pele clara, blusa social laranja claro, cabelos lisos com pontas onduladas, uma porceira no braço direito e o fundo com uma planta.">
+        </picture>
+      </section>
+      <!-- END SECTION IMAGE -->
+      <section class="content">
+        <h1>We're <strong>coming soon</strong></h1>
+
+        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <form method="post" autocomplete="on" novalidate>
+        <div class="campo_email campo_normal">    
+         
+        <input type="email" name="email" id="mail" placeholder="Email Address" class="placeholder_normal">
+        <img src="assets/images/icon-error.svg" alt="icone de erro" class="icon-error-off icon">
+        
+        <button type="submit" class="btn">
+           <img src="assets/images/icon-arrow.svg" alt="icone-arrow">
+        </button>
+        </div>
+        <div class="res">
+            
+        </div>
+        </form>
+      </section>
+      <!-- END SECTION CONTENT -->
+   </main>
+   <script src="js/script.js"></script>
+</body>
+</html>

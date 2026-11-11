@@ -1,0 +1,51 @@
+section.title span {
+  color: var(--neutral-600);
+  font-family: var(--DM-Mono);
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+}
+section.title {
+  margin-bottom: 3rem;
+}
+.title .ascess {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.ascess .btns {
+  display: flex;
+  flex-flow: row nowrap;
+  gap:1rem;
+  align-content: center;
+  justify-content: space-between;
+  align-self: center;
+}
+.ascess .btn {
+  border-radius: 1.5rem;
+  border: 3px solid var(--neutral-400);
+  padding: .5rem 2rem;
+  background-color: transparent;
+  font-family: var(--DM-Sans);
+  font-weight: var(--fw-semibold);
+}
+.ascess .btn:active {
+  outline: 2px solid var(--terracotta-600);
+  cursor: pointer;
+}
+.btns .add {
+  background-color: var(--neutral-800);
+  color: var(--neutral-400);
+}
+@media screen and (min-width:40rem){
+  .ascess .btn:hover {
+    outline: 2px solid var(--terracotta-600);
+    cursor: pointer;
+  }
+}
+@media screen and (min-width:60rem){
+  .title .ascess {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}

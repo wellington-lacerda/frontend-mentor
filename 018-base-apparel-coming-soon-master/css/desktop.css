@@ -1,0 +1,30 @@
+main {
+    display: grid;
+    grid-template-columns:auto 30rem auto auto ;
+    grid-template-rows: 20% 80%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.logo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-top: clamp(.5rem,5vw,3rem);
+}
+.logo img {width: 11rem;}
+.image {
+    grid-column:4 / -1 ;
+    grid-row:1 / -1 ;
+}
+.content {
+    grid-column:2 / 3 ;
+    grid-row:2 / -1 ;
+    text-align: left;
+    margin-top: 3rem;
+}
+.content h1 {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.icon-error-on {right: 6rem;}
+.content .btn {padding: .8rem 2.5rem;}

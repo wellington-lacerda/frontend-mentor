@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+body {
+  font-family: var(--ff-barlow-Condensed);
+  font-weight: var(--fw-normal);
+  color: var(--blue-950);
+  position: relative;
+}
+.background {
+  position: absolute;
+  left: 50%;
+  background-color: var(--blue-100);
+  width: 50%;
+  height: 55%;
+  border-radius: 0 0 0 3rem;
+  z-index: -1;
+}
+header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  position: absolute;
+  top: 15%;
+  transform: translateX(-50%);
+  padding: 1.5rem;
+  width:80%;
+  background-color: var(--white);
+  box-shadow: -3px 3px 8px #00000036;
+  transition: 1s ease-in-out;
+}
+.nav-off {
+  left: -50%;
+}
+.nav-on {
+  left: 50%;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap:1.5rem;
+}
+nav a {
+  font-size: 1rem;
+  font-family: var(--ff-barlow);
+  text-transform: uppercase;
+  color: var(--blue-950);
+  font-weight: var(--fw-bold);
+}
+li.line {
+  height: 2px;
+  width: 100%;
+  background-color: var(--blue-950);
+  opacity: 10%;
+}
+a.login {
+  opacity: 50%;
+}
+main {
+  padding: 2rem;
+  overflow-x: hidden;
+}
+.place {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  gap:1rem;
+  margin-bottom: 1rem;
+}
+.image {
+  margin-right: -10rem;
+  margin-bottom: 4rem;
+}
+.image img {
+  width: 100%;
+}
+.text-new {
+  text-transform: uppercase;
+  padding: .2rem .6rem;
+  font-weight: var(--fw-bold);
+  border-radius: 1rem;
+  background-color: var(--blue-950);
+  color: var(--blue-100);
+  align-self: center;
+}
+.text-mono {
+  text-transform: uppercase;
+  opacity: 50%;
+  align-self: center;
+  letter-spacing: .3rem;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1.5rem;
+}
+p {
+  font-family: var(--ff-barlow);
+  margin-bottom: 1.5rem;
+  font-size: var(--fs);
+}
+button.submit {
+  padding: .9rem 1.3rem;
+  background-color: var(--red-400);
+  border-radius: .3rem;
+  color: var(--blue-100);
+  border: none;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  transition: .5s ease-in-out;
+}
+button.submit:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+ span.preview {
+  text-transform: uppercase;
+  opacity: 50%;
+  align-self: center;
+}

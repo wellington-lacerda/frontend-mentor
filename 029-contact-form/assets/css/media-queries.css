@@ -1,0 +1,15 @@
+form.register {
+    width: 40rem;
+}
+.box-names {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+}
+.box-label .query-box {
+    grid-template-columns: auto auto;
+    grid-template-rows: none;
+}
+.box-label .message {
+    height: 5rem;
+}

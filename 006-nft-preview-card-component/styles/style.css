@@ -1,0 +1,107 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+/* cores */
+--blue500: hsl(215, 51%, 70%);
+--cyan400: hsl(178, 100%, 50%);
+
+--blue950: hsl(217, 54%, 11%);/* (main BG) */
+--blue900: hsl(216, 50%, 16%);/* (card BG) */
+--blue800: hsl(215, 32%, 27%);/* (line)    */
+--white: hsl(0, 0%, 100%);
+/* fontes */
+--font-size: 18px;/* (paragraph) */
+
+--font-regular:normal 300 1rem 'Outfit', Arial, Sans-serif;
+--font-medium:normal 400 1rem 'Outfit', Arial, Sans-serif;
+--font-semibold:normal 600 1rem 'Outfit', Arial, Sans-serif;
+ 
+}
+body {
+    display: grid;
+    place-items:center;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--blue950);
+    color: var(--blue500);
+    font: var(--font-regular);
+}
+main {
+    min-width: 17rem;
+    max-width: 22rem;
+    background: var(--blue900);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+section.image {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.image:hover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: var(--cyan400) url("../images/icon-view.svg") no-repeat center center;
+    width: 100%;
+    height: 99%;
+    opacity: 60%;
+    cursor: pointer;
+}
+section.image img {
+    width: 100%;
+    height: 100%;
+}
+.content h1 {
+    font: var(--font-semibold);
+    font-size: 1.5rem;
+    color: var(--white);
+    margin: 1.4rem 0rem;
+    display: inline-block;
+}
+.content p {
+    font-size:var(--font-size);
+    line-height: 1.8rem;
+}
+.time {
+    border-bottom: 2px solid var(--blue800);
+    padding: 1rem 0rem;
+}
+.time,.eth,.days {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: .4rem;
+    font: var(--font-medium);
+}
+.eth strong {
+    color: var(--cyan400);
+    font: var(--font-semibold);
+}
+.cred {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+    column-gap: 1rem;
+}
+.cred img {
+    width: 2rem;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+.cred strong {
+    font: var(--font-medium);
+    color: var(--white);
+}
+.content h1:hover,.cred strong:hover {
+    color: var(--cyan400);
+    cursor: pointer;
+}

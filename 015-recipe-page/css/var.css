@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+:root {
+/* CORES */
+--stone100: hsl(30, 54%, 90%);
+--stone150: hsl(30, 18%, 87%);
+--stone600: hsl(30, 10%, 34%);
+--stone900: hsl(24, 5%, 18%);
+
+--brown800: hsl(14, 45%, 36%);
+--rose800: hsl(332, 51%, 32%);
+--rose50: hsl(330, 100%, 98%);
+--white:#fff;
+
+/* FONTES */
+--fs:16px; /* (paragraph) */
+
+--ff1: 'Young Serif', Arial, Sans-serif;
+--regular: 400;
+
+--ff2: 'Outfit', Arial, Sans-serif;
+--medium: 600;
+--semibold: 700;
+}

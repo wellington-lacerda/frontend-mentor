@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/root.css">
+  <link rel="stylesheet" href="assets/css/mobile-first.css">
+  <link rel="stylesheet" href="assets/css/media-queries.css" 
+  media="screen and (min-width:40rem)"> 
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+  <main>
+     <form class="register" method="post" novalidate autocomplete="on" >
+        <h1>Contact Us</h1>
+        <div class="box-names">
+         <!-- first name -->
+         <div class="box-label">
+           <label for="ifirst-name" class="inline-label">First Name *</label>
+           <label class="input-box box-normal">
+              <input type="text" name="first-name" id="ifirst-name" class="input">
+           </label>
+           <span class="avise-erro"></span>
+         </div>
+         <!-- last name -->
+         <div class="box-label">
+           <label for="ilast-name" class="inline-label">Last Name *</label>
+           <label class="input-box box-normal">
+              <input type="text" name="last-name" id="ilast-name" class="input">
+           </label>
+           <span class="avise-erro"></span>
+         </div>
+        </div>
+        <!-- email -->
+        <div class="box-label">
+           <label for="iemail" class="inline-label">Email Address *</label>
+           <label class="input-box box-normal">
+              <input type="email" name="email" id="iemail" class="input">
+           </label>
+           <span class="avise-erro"></span>
+        </div>
+        <!-- query radios -->
+        <div class="box-label query-radio">
+           <input type="radio" name="query" id="general-enquiry" value="General Enquiry" class="none">
+           <input type="radio" name="query" id="support-request" value="Support Request" class="none">
+           
+           <span class="inline-label">Query Type *</span>
+           <div class="query-box">
+            <label for="general-enquiry" class="input-box input-flex radio-normal">
+               <span class="radio-circle"></span>
+               <span class="span-name">General Enquiry</span>
+            </label>
+           
+            <label for="support-request" class="input-box input-flex radio-normal"> 
+               <span class="radio-circle "></span>
+               <span class="span-name">Support Request</span>
+            </label>
+           </div>
+           <span class="avise-erro"></span>
+        </div>
+        <!-- message -->
+        <div class="box-label">
+           <label for="imessage" class="inline-label">Message *</label>
+           <textarea name="message" id="imessage" class="input-box message"></textarea>
+           <span class="avise-erro"></span>
+        </div>
+        <!-- checkbox -->
+        <div class="box-label">
+           <input type="checkbox" name="contact" id="icontact" class="none custom-checkbox">
+           
+           <label for="icontact" class="check-flex"> 
+              <span class="check-square"></span>
+              <span>I consent to being contacted by the team *</span>
+           </label>
+           <span class="avise-erro"></span>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+     </form>
+     
+     <div class="message-sent check-off">
+        <div class="icon-success">
+           <img src="assets/images/icon-success-check.svg" alt="icon sucess check">
+           <strong>Message Sent!</strong>
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+     </div>
+     
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

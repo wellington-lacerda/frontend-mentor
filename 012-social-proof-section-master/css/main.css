@@ -1,0 +1,98 @@
+@charset 'UTF-8';
+
+body {
+    font: var(--padrao);
+    background: var(--white);
+    display: grid;
+    place-items:center;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 1rem;
+    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-rows:1fr 22fr 1fr ;
+}
+main {
+    text-align: center;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+main p {
+    line-height: 1.5rem;
+}
+/* START AVISE SECTION */
+section.avise {
+    max-width: 25rem;
+}
+.avise h1 {
+    font-weight: var(--semibold);
+    color: var(--very-dark);
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 15rem;
+    font-size: 2.3rem;
+}
+.avise p {
+    color: var(--dark-grayish);
+}
+/* END AVISE SECTION */
+
+/* START PREVIEWS SECTION */
+section.previews {
+    margin: 2rem 0rem;
+    max-width: 26rem;
+}
+.rated {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    column-gap:3rem;
+    row-gap:.5rem ;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    background: var(--light-grayish);
+}
+.txt strong {
+    color: var(--very-dark);
+}
+/* END PREVIEWS SECTION */
+
+/* START SECTION USERS */
+section.users {
+    display: flex;
+    flex-flow: row wrap;
+    gap:1rem;
+}
+section.users .box {
+    background: var(--very-dark);
+    color: var(--light-grayish);
+    padding: 2rem;
+    min-width: 17rem;
+    max-width: 22rem;
+    border-radius: .5rem;
+    text-align: left;
+}
+.box .perfil {
+    display: flex;
+    flex-flow: row wrap;
+    gap:1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.perfil img {
+    width: 2rem;
+    border-radius: 50%;
+}
+.perfil .names {
+    display: flex;
+    flex-flow: column nowrap;
+    gap:.2rem;
+}
+.names span {
+    color: var(--soft-pink);
+}
+.box p {
+    font-weight: var(--regular);
+}
+/* END SECTION USERS */

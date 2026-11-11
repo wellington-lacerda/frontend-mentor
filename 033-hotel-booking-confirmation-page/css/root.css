@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+:root {
+/* colors */
+  --neutral-900: hsl(33, 15%, 15%);
+  --neutral-800: hsl(33, 22%, 20%);
+  --neutral-700: hsl(32, 20%, 29%);
+  --neutral-600: hsl(33, 17%, 41%);
+  --neutral-400: hsl(36, 22%, 86%);
+  --neutral-200: hsl(30, 24%, 93%);
+  --neutral-100: hsl(35, 60%, 96%);
+  --neutral-50: hsl(40, 60%, 98%);
+  --neutral-0: hsl(0, 0%, 100%);
+  --shadow: hsl(33, 17%, 41%, 20%);
+  --shadow-hots: hsl(18, 62%, 47%, 30%);
+
+/* ### Sun */
+
+  --sun-500: hsl(42, 83%, 58%);
+  --sun-300: hsl(44, 84%, 75%);
+  --sun-200: hsl(45, 100%, 74%);
+  --sun-50: hsl(41, 100%, 93%);
+
+/* ### Terracotta */
+
+  --terracotta-700: hsl(15, 69%, 37%);
+  --terracotta-600: hsl(15, 74%, 41%);
+  --terracotta-500: hsl(18, 62%, 47%);
+  --terracotta-400: hsl(22, 72%, 56%);
+
+/* ### Blue */
+
+  --blue-500: hsl(230, 49%, 56%);
+
+/* ### Rose */
+
+  --rose-500: hsl(340, 48%, 52%);
+
+/* fonts */
+  --fs: 14px; /* (paragraph) */
+  
+  --fraunces: 'Fraunces', Arial, Helvetica, Sans-serif;
+  --DM-Sans: 'DM Sans', Arial, Helvetica, Sans-serif;
+  --DM-Mono: 'DM Mono', Arial, Helvetica, Sans-serif;
+  
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  
+  /* 
+  Fraunces 400 regular and italic
+  DM Sans 400, 500, 600 
+  DM Mono 400, 500  
+  */
+}
+body {
+  font-family: var(--DM-Sans);
+  font-weight: var(--fw-normal);
+  background-color: var(--neutral-100);
+  color: var(--neutral-900);
+  max-width: 90rem;
+  margin: auto;
+  position: relative;
+}
+main {
+  padding: 1rem;
+}
+p {
+  font-size: var(--fs);
+}
+@media screen and (min-width:40rem){
+  body {
+    display: grid;
+    grid-template-columns: 18rem auto;
+  }
+}

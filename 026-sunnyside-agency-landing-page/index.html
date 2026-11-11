@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/mobile-first.css">
+  <link rel="stylesheet" href="css/media-queries.css" media="screen and (min-width:40rem)">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+<body>
+  <header>
+      
+     <div class="nav-header">
+        <img src="images/logo.svg" alt="website logo header">
+        <button class="btn-menu" type="button">
+           <img src="images/icon-hamburger.svg" alt="icon hamburger menu">
+        </button>
+        
+        <nav class="navbar navbar-off">
+           <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><button type="button" class="btn-link">Contact</button></li>
+           </ul>
+        </nav>
+        
+     </div>
+     <div class="card-title">
+        <h1>We are creatives</h1>
+        <img src="images/icon-arrow-down.svg" alt="icon arrow down">
+     </div>
+  </header>
+  <main>
+     <section class="grids">
+     <!-- div image 01 -->
+       <div class="card-image image-egg">
+           <picture>
+             <source media="(min-width: 40rem)" srcset="images/desktop/image-transform.jpg" type="image/jpg">
+             <img src="images/mobile/image-transform.jpg" alt="image transform of a egg">
+           </picture>
+       </div>
+     <!-- article 01 -->
+       <article class="card-text txt-brand">
+           <h2>Transform your brand</h2>
+           <p>We are a full-service creative agency specializing in helping brands grow fast. 
+  Engage your clients through compelling visuals that do most of the marketing for you.
+</p>
+           <div class="line-link">    
+           <a href="#" class="lear1">Learn more</a>
+           <div class="line cor1"></div>
+           </div>
+       </article>
+     <!-- div image 02 -->
+       <div class="card-image image-cup">
+           <picture>
+               <source media="(min-width: 40rem)" srcset="images/desktop/image-stand-out.jpg" type="image/jpg">
+               <img src="images/mobile/image-stand-out.jpg" alt="image of a cup">
+           </picture>
+       </div>
+     <!-- article 02 -->
+       <article class="card-text txt-stand">
+           <h2>Stand out to the right audience</h2>
+               <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+               <div class="line-link">
+               <a href="#" class="lear2">Learn more</a>
+               <div class="line cor2"></div>
+               </div>
+       </article>
+     <!-- article back 01 -->
+       <article class="card-back grafic-design">
+           <h2>Graphic design</h2>
+           <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+       </article>
+     <!-- article back 02 -->
+       <article class="card-back photography">
+            <h2>Photography</h2>
+            <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+       </article>
+     </section>
+     <!-- SECTIONS SECUNDARY -->
+     <section class="clients-testimonials">
+         
+        <div class="text-center">
+           <h2>Client testimonials</h2>
+        </div>
+        
+        <article>
+        <div class="client">
+           <img src="images/image-emily.jpg" alt="image of Emily, a client">
+           <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+           <strong>Emily R.</strong>
+           <span>Marketing Director</span>
+        </div>
+        
+        <div class="client">
+           <img src="images/image-thomas.jpg" alt="image of Thomas, a client">
+           <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+           <strong>Thomas S.</strong>
+           <span>Chief Operating Officer</span>
+        </div>
+        
+        <div class="client">
+           <img src="images/image-jennie.jpg" alt="image of Jennie, a client">
+           <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+           <strong>Jennie F.</strong>
+           <span>Business Owner</span>
+        </div>
+        </article>
+        
+     </section>
+     <section class="figures">
+        <picture>
+           <source media="(min-width: 40rem)" srcset="images/desktop/image-gallery-milkbottles.jpg" type="image/jpg">
+           <img src="images/mobile/image-gallery-milkbottles.jpg" alt="image of a milkbottles">
+        </picture>
+        <picture>
+           <source media="(min-width: 40rem)" srcset="images/desktop/image-gallery-orange.jpg" type="image/jpg">
+           <img src="images/mobile/image-gallery-orange.jpg" alt="image of an orange">
+        </picture>
+        <picture>
+           <source media="(min-width: 40rem)" srcset="images/desktop/image-gallery-cone.jpg" type="image/jpg">
+           <img src="images/mobile/image-gallery-cone.jpg" alt="image of an ice cream cone ">
+        </picture>
+        <picture>
+           <source media="(min-width: 40rem)" srcset="images/desktop/image-gallery-sugarcubes.jpg" type="image/jpg">
+           <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="image of a sugar cubes">
+        </picture>
+     </section>
+  </main>
+  <footer>
+  <img src="images/logo-footer.svg" alt="website lofo footer" class="logo-footer">
+  <div class="nav-link">
+     <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+     </ul>
+  </div>
+  
+  <div class="social-link">
+      <a href="#" aria-label="link para ir ao facebook"><img src="images/icon-facebook.svg" alt="Facebook" class="icon-social"></a>
+      <a href="#" aria-label="link para ir ao instagram"><img src="images/icon-instagram.svg" alt="instagram" class="icon-social"></a>
+      <a href="#" aria-label="link para ir ao twitter"><img src="images/icon-twitter.svg" alt="twitter" class="icon-social"></a>
+      <a href="#" aria-label="link para ir ao pinterest"><img src="images/icon-pinterest.svg" alt="pinterest" class="icon-social"></a>
+  </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

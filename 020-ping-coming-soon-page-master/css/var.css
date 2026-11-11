@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+--Blue100: hsl(223, 87%, 63%, 20%);
+--Blue500: hsl(223, 87%, 63%);
+--White:#fff;
+--Blue200: hsl(223, 100%, 88%);
+--Red400: hsl(354, 100%, 66%);
+
+--Gray400: hsl(0, 0%, 59%);
+--Blue950: hsl(209, 33%, 12%);
+
+--FS:20px; 
+--FF:'Libre Franklin', Arial, Sans-serif;
+--light:300;
+--semibold:600;
+--bold:700;
+}

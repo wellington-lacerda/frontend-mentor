@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+:root {
+/* CORES */
+--very-dark: hsl(300, 43%, 22%);
+--soft-pink: hsl(333, 80%, 67%);
+--dark-grayish: hsl(303, 10%, 53%);
+--light-grayish: hsl(300, 24%, 96%);
+--white: hsl(0, 0%, 100%);
+
+/* FONTES */
+--fs:15px;
+--padrao:normal 500 1rem 'League Spartan', Arial, Sans-serif;
+--regular: 400;
+--semibold: 700;
+}

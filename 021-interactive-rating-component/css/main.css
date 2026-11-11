@@ -1,0 +1,110 @@
+@charset 'UTF-8';
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--Grey950);
+    color: var(--White);
+}
+main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content:center;
+    padding: 1rem;
+    font-family: var(--FF); 
+    font-weight: var(--normal);
+}
+section {
+    background: var(--Grey925);
+    padding: 1.5rem;
+    min-width: 15rem;
+    max-width: 25rem;
+    border-radius: 1rem;
+}
+section p {
+    font-size: var(--FS);
+    margin-bottom: 1.5rem;
+    color: var(--Grey500);
+    line-height: 1.5rem;
+}
+.rating-states .icon {
+    background: var(--Grey900);
+    display: inline-flex;
+    margin-bottom: 1.5rem;
+    width: auto;
+    padding: .8rem;
+    border-radius: 50%;
+}
+.rating-states h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: var(--bold);
+}
+.box-botoes {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+form input[type='radio'] {display: none;}
+.form-label {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-family: Arial, Sans-serif;
+}
+.hover-on:hover {
+    background: var(--Orange500);
+    color: var(--Grey950);
+    cursor: pointer;
+}
+.hover-off:hover {
+    background: var(--White);
+    cursor: pointer;
+}
+form .but {
+    width: 100%;
+    padding: 1rem;
+    background: var(--Orange500);
+    color: var(--Grey950);
+    font-family: var(--FF);
+    font-weight: var(--bold);
+    border: 2px solid var(--Grey950);
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+form .but:hover {background: var(--White);}
+.thanks-states {text-align: center;}
+.thanks-states .image {margin-bottom: 1.5rem;}
+.thanks-states .sel {
+    margin-bottom: 1rem;
+    display: inline-flex;
+    background: var(--Grey900);
+    color: var(--Orange500);
+    flex-flow: row nowrap;
+    column-gap: .2rem;
+    border-radius: 1rem;
+    font-family: Arial, Sans-serif;
+    padding: .5rem;
+}
+.thanks-states h2 {margin-bottom: 1rem;}
+/* ativos  */
+.section-active {display: block;}
+.label-active {
+    background: var(--White);
+    color: var(--Grey950);
+}
+/* desativos */
+.section-disabled {display: none;}
+.label-normal {
+    background: var(--Grey900);
+    color: var(--Grey500);
+}

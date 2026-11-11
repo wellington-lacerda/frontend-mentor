@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+:root {
+    /* Colors */
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-grey-200: hsl(0, 0%, 85%);
+    --color-white-100: hsl(0, 0%, 100%, 70%);
+
+    /* Typography */
+    --fs: 15px;
+    --ff-default: Arial, Helvetica, sans-serif;
+    --ff-alata: 'Alata', var(--ff-default);
+    --ff-josefin-sans: 'Josefin Sans', var(--ff-default);
+
+    --fw-light: 300;
+    --fw-normal: 400;
+    
+    --porcent: -100%;
+}

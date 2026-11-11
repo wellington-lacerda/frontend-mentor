@@ -1,0 +1,97 @@
+body {
+    display: grid;
+    place-items:center; 
+    width: 100%;
+    min-height: 100vh; 
+    font-family: var(--FF);
+    color: var(--Black);
+    background: var(--Grey100);
+    font-weight: var(--normal);
+}
+.aspas {
+    display: none;
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    gap:2rem;
+    padding: 2rem;
+}
+main h1 {
+    position: absolute;
+    left: -9999rem;
+}
+.card {
+    padding: 2rem;
+    border-radius: .5rem;
+    background: var(--White);
+    flex: 1 1 20rem;
+}
+.card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.card span {
+    font-size: var(--FS1);
+}
+.card strong {
+    font-size: .9rem;
+}
+.card p {
+    line-height: 1.3rem;
+    font-size: var(--FS2);
+    font-weight: var(--semibold);
+}
+.card .perfil {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 1rem;
+    margin-bottom: 1rem;
+}
+.perfil .name {
+    display: flex;
+    flex-flow: column nowrap;
+    gap:.1rem;
+}
+.card img {
+    width: 2rem;
+    border-radius: 50%;
+}
+.daniel {
+    background: var(--Purple500);
+    color: var(--Purple50);
+}
+.daniel h2 {
+    color: var(--White);
+}
+.daniel img {
+    border: 2px solid var(--Purple300);
+}
+.jonathan {
+    background: var(--Grey500);
+    color: var(--Grey100);
+}
+.jonathan h2 {
+    color: var(--White);
+}
+.jeanette {
+    color: var(--Grey500);
+}
+.jeanette h2 {
+    color: var(--Dark-blue);
+}
+.patrick {
+    background: var(--Dark-blue);
+    color: var(--Grey200);
+}
+.patrick img {
+    border: 2px solid var(--Purple500);
+}
+.kira {
+    color: var(--Grey400);
+}
+.kira h2 {
+    color: var(--Grey500);
+}

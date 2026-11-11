@@ -1,0 +1,118 @@
+section.guest-info {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap:1rem;
+}
+.card-info {
+  padding: 1rem;
+  background-color: var(--neutral-50);
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid var(--neutral-400);
+  flex: 1 0 12rem;
+  gap:.7rem;
+}
+.card-info h2 {
+  font-family: var(--fraunces);
+  font-weight: var(--fw-normal);
+}
+.card-info span {
+  font-size: .8rem;
+}
+.guest-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.guest-row span {
+  font-size: 1.5rem;
+  font-family: var(--fraunces);
+  font-weight: var(--fw-normal);
+}
+.guest-row strong {
+  font-family: var(--DM-Mono);
+  text-transform: uppercase;
+  font-weight: var(--fw-medium);
+  letter-spacing: .1rem;
+  font-size: .8rem;
+}
+.lead {
+  display: flex;
+  flex-flow: column nowrap;
+  gap:.3rem;
+}
+.base-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--neutral-200);
+  padding: .5rem;
+  border-radius: .5rem;
+}
+.base-row span.txt {
+  font-family: var(--DM-Mono);
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: var(--neutral-700);
+}
+.base-row button {
+  background-color: var(--neutral-100);
+  border: 1px solid var(--neutral-400);
+  border-radius: 1rem;
+  font-size: .7rem;
+  padding: .1rem .4rem;
+  font-family: var(--DM-Mono);
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: var(--neutral-700);
+}
+.base-row button:active {
+  outline: 2px solid var(--terracotta-400);
+  cursor: pointer;
+  background-color: var(--neutral-400);
+}
+.guest-line {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap:.5rem;
+}
+.guest-line img {
+  padding: .5rem;
+  border-radius: .5rem;
+}
+.arrival {
+  color: var(--terracotta-500);
+}
+.arrival img {
+  background-color: var(--terracotta-500);
+}
+.wifi {
+  color: var(--blue-500);
+}
+.wifi img {
+  background-color: var(--blue-500);
+}
+.breakfast {
+  color: var(--rose-500);
+}
+.breakfast img {
+  background-color: var(--rose-500);
+}
+@media screen and (min-width:40rem){
+  .card-info {
+    height: 15rem; 
+    overflow: scroll;
+  }
+  .base-row button:hover {
+    outline: 2px solid var(--terracotta-400);
+    cursor: pointer;
+    background-color: var(--neutral-400);
+  }
+}

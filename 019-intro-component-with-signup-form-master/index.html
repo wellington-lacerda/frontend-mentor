@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/var.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:40rem)">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main>
+    <section class="txt">
+       <h1>Learn to code by watching others</h1>
+       <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great,but understanding how developers think is invaluable.</p>
+    </section>
+    <section class="form">
+       <div class="price">
+           <p>
+           <strong>Try it free 7 days</strong> then $20/mo. thereafter
+           </p>
+       </div>
+       <form method="post" autocomplete="on" class="form-check" novalidate>
+           <div class="box">
+           <div class="div_input input-normal">
+           <input type="text" name="nome" id="Inome" placeholder="First Name" required class="input">
+           <!-- ICONE DE ERROR -->
+           </div>
+           <label for="Inome" class="error label-normal"> First Name cannot be empty 
+           </label>
+           </div>
+           <div class="box">
+           <div class="div_input input-normal">        
+           <input type="text" name="lastName" id="IlastName" placeholder="Last Name" required class="input">
+           <!-- ICONE DE ERROR -->
+           </div>
+           <label for="IlastName" class="error label-normal">Last Name cannot be empty</label>
+           </div>
+           <div class="box">
+           <div class="div_input input-normal">
+           <input type="email" name="email" id="Iemail" placeholder="Email Address" required class="input">
+           <!-- ICONE DE ERROR -->
+           </div>
+           <label for="Iemail" class="error label-normal">Look is like this is not an email</label>
+           </div>
+           <div class="box">
+           <div class="div_input input-normal">
+           <input type="password" name="password" id="Ipassword" placeholder="Password" required class="input">
+           <!-- ICONE DE ERROR -->
+           </div>
+           <label for="Ipassword" class="error label-normal">Password cannot be empty</label>
+           </div>
+           <!-- BOTÃO SUBMIT -->
+           <button type="submit" class="submit input">Claim your free trial</button>
+           <p>
+           By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+           </p>
+       </form>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+header {
+    height: 50rem;
+    width: 100%;
+    background: var(--White) url("../images/desktop/image-header.jpg") no-repeat center center;
+    background-size: cover;
+}
+header .btn-menu {
+    display: none;
+}
+header .navbar {
+    position: static;
+    top: auto;
+    width: 80%;
+    background: transparent;
+}
+header .navbar::after {
+    content: "";
+    position: static;
+    top: 0;
+    right: 0;
+    border: none;
+}
+header .navbar .btn-link {
+    background: var(--White);
+}
+header .navbar .btn-link:hover {
+    background: var(--back-hover);
+    color: var(--White);
+    cursor: pointer;
+}
+header ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap:2rem;
+    padding: 0;
+}
+header .navbar a {
+    margin-bottom: 0;
+    color: var(--White);
+}
+header .card-title {
+    margin-top: -5rem;
+}
+header .navbar-off {
+    right: 0;
+}
+main .grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    width: 100%;
+}
+main .grids .grafic-design {
+    background: url("../images/desktop/image-graphic-design.jpg") no-repeat top center;
+    background-size: cover;
+}
+main .grids .photography {
+    background: url("../images/desktop/image-photography.jpg") no-repeat top center;
+    background-size: cover;
+}
+main .card-text .line-link {
+    justify-content: flex-start;
+    margin: 0;
+}
+.image-egg {
+    order: 2;
+}
+.txt-brand {
+    order: 1;
+}
+.image-cup {
+    order: 3;
+}
+.txt-stand {
+    order: 4;
+}
+.grafic-design {
+    order: 5;
+}
+.photography {
+    order: 6;
+}
+main .clients-testimonials {
+    padding: 6rem 0 4rem 0;
+}
+.clients-testimonials article {
+    gap:2rem;
+}
+main .figures {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+@media screen and (min-width:60rem){
+    main .grids .card-text {
+        display: grid;
+        place-content:center;
+        padding: clamp(1rem,10vw,8rem);
+        text-align: left;
+    }
+    main .grids .card-back {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: clamp(2rem,10vw,25rem);
+        padding-right: clamp(2rem,10vw,25rem);
+    }
+}

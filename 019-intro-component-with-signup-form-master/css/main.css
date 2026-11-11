@@ -1,0 +1,130 @@
+@charset 'UTF-8';
+body {
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    font-family: var(--FF);
+    font-weight: var(--normal2);
+    background: var(--Red400) url("../images/bg-intro-mobile.png") no-repeat center center;
+    background-size: cover;
+    color: var(--White);
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+}
+.txt h1 {
+    font-size: clamp(1.7rem,5vw,3rem);
+    padding: 0 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: var(--bold);
+}
+.txt p {
+    font-size: var(--FS);
+    line-height: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+.price {
+    background: var(--Purple700);
+    padding: 1rem;
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    box-shadow: 0 10px 0 var(--Shadow);
+    margin-bottom: 1.5rem;
+    font-weight: var(--normal1);
+}
+.form-check {
+    padding: 1.5rem;
+    background: var(--White);
+    text-align: left;
+    color: var(--Purple350);
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: 0 10px 0 var(--Shadow);
+}
+.div_input {
+    border-radius: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    column-gap: .5rem;
+}
+.box {
+    margin-bottom: 1rem;
+}
+.div-focus {
+    border: 2px solid var(--Purple700);
+}
+.form-check input {
+    width: 100%;
+    font-family: var(--FF);
+    font-weight: var(--normal2);
+    outline: none;
+    border: none;
+}
+.form-check label {
+    text-align: right;
+    font-size: .7rem;
+    margin-bottom: 1rem;
+    margin-top: .2rem;
+}
+/* COMEÇO DOS ERROS */
+.icon-error {
+    display: block;
+}
+.icon-normal {
+    display: none;
+}
+.label-normal {
+    display: none;
+}
+.label-error {
+    color: var(--Red400);
+    margin-bottom: .8rem;
+    display: block;
+}
+.input-normal {
+    border: 1px solid var(--Purple350);
+}
+.input-error {
+    border: 2px solid var(--Red400);
+}
+.input-error input::placeholder {
+    color: var(--White);
+}
+input.place-error::placeholder {
+    color: var(--Red400);
+}
+.form-check input::placeholder {
+    font-weight: var(--bold);
+}
+/* FIM DOS ERROS */
+.form-check .submit {
+    background: var(--Green400);
+    color: var(--White);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: var(--FF);
+    font-weight: var(--normal1);
+    padding: .7rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    border: 4px solid transparent;
+    width: 100%;
+}
+.form-check .submit:hover {
+    background: var(--Green100);
+    border-bottom: 4px solid var(--Green400);
+}
+form p {
+    font-size: .7rem;
+    text-align: center;
+    font-weight: var(--bold);
+    padding: 0 .8rem;
+    line-height: 1.3rem;
+}
+form a {
+    color: var(--Red400);
+}

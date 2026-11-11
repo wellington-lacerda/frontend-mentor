@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+--Gradient: hsl(6, 100%, 80%), hsl(335, 100%, 65%);
+
+--Blue200: hsl(243, 100%, 93%);
+--Grayish-Blue: hsl(229, 7%, 55%);
+--Blue850: hsl(228, 56%, 26%);
+--Blue900: hsl(229, 57%, 11%, 50%);
+--Blue950: hsl(229, 57%, 11%);
+--White:#fff;
+
+--FS:14px;
+--FF:'Raleway', Arial, Sans-serif;
+--normal:400;
+--bold:700;
+}

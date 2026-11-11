@@ -1,0 +1,40 @@
+body {
+    display: grid;
+    grid-template-columns: auto 40rem auto;
+    place-items:center;
+    text-align: left;
+}
+header,main,footer {
+    grid-column: 2 / 3;
+}
+.content h1 {
+    text-align: center;
+}
+.content p {
+    font-size: var(--FS);
+    text-align: center;
+}
+.image img {
+    margin-bottom: 2rem;
+}
+form {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    column-gap: 1rem;
+}
+form div.valid {
+    width: 70%;
+}
+form input {
+    width: auto;
+}
+form .but {
+    width: calc(30% - 1rem);
+}
+footer p{
+    margin-bottom: 2rem;
+}
+form .error {
+    padding-left: 2rem;
+}

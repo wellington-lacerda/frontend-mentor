@@ -1,0 +1,23 @@
+main {
+    background: var(--Red400) url("../images/bg-intro-desktop.png") no-repeat center center;
+    display: grid;
+    place-items:center;
+    grid-template-columns:8% auto 4% auto 8%;
+}
+.txt {
+    grid-column:2 / 3 ;
+    text-align: left;
+}
+.txt h1 {
+    padding: 0;
+    line-height: 3.5rem;
+}
+.txt p {
+    margin-bottom: 0;
+}
+.form {
+    grid-column:4 / 5 ;
+}
+.form-check {
+    padding: 2rem;
+}
