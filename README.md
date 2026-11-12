@@ -46,4 +46,4 @@ Dentro de cada pasta, você encontrará:
 
 ### 📝 Licença
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes (se você for incluir um).
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes (se você for incluir um).
