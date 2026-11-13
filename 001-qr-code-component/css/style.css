@@ -1,0 +1,56 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* colors */
+  --color-white: #fff;
+  --color-slate-300: #d6e2f0;
+  --color-slate-500: #68778d;
+  --color-slate-900: #1f3251;
+  /* fonts */
+  --fonte-sans: 'Outfit', Sans-serif;
+  --fw-normal: 400;
+  --fw-extrabold: 700;
+}
+body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-slate-300);
+  padding: 1.5rem;
+  font-family: var(--fonte-sans);
+}
+main {
+  background: var(--color-white);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  box-shadow: 0 25px 25px #0000000c;
+}
+.image-qr-code {
+  border-radius: 0.7rem;
+  width: 100%;
+  display: block;
+}
+.content {
+  padding: 1rem;
+  text-align: center;
+}
+h1 {
+  color: var(--color-slate-900);
+  margin-bottom: 1rem;
+  font-size: 1.375rem;
+  font-weight: var(--fw-extrabold);
+}
+p {
+  color: var(--color-slate-500);
+  font-size: 15px;
+  font-weight: var(--fw-normal);
+  padding-inline: 0.4rem;
+}
