@@ -13,8 +13,11 @@
   --color-slate-900: #1f3251;
   /* fonts */
   --fonte-sans: 'Outfit', Sans-serif;
+  --txt-body: 0.9375rem;
   --fw-normal: 400;
   --fw-extrabold: 700;
+  /* shadow */
+  --shadow-sm: 0 25px 25px #0000000c;
 }
 body {
   display: grid;
@@ -27,14 +30,14 @@ body {
 }
 main {
   background: var(--color-white);
-  border-radius: 1rem;
+  border-radius: 1.25rem;
   padding: 1rem;
   width: 100%;
   max-width: 20rem;
-  box-shadow: 0 25px 25px #0000000c;
+  box-shadow: var(--shadow-sm);
 }
 .image-qr-code {
-  border-radius: 0.7rem;
+  border-radius: 0.625rem;
   width: 100%;
   display: block;
 }
@@ -47,10 +50,12 @@ h1 {
   margin-bottom: 1rem;
   font-size: 1.375rem;
   font-weight: var(--fw-extrabold);
+  line-height: 1.2;
 }
 p {
   color: var(--color-slate-500);
-  font-size: 15px;
+  font-size: var(--txt-body);
   font-weight: var(--fw-normal);
-  padding-inline: 0.4rem;
+  line-height: 1.4;
+  letter-spacing: 0.012em;
 }
