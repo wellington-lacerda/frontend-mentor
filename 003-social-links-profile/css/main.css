@@ -1,0 +1,45 @@
+main {
+  background-color: var(--color-grey-800);
+  width: clamp(20rem, 26vw, 27rem);
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+  text-align: center;
+  border-radius: .5rem;
+}
+.avatar {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-weight: var(--fw-bold);
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+.location {
+  font-weight: var(--fw-semibold);
+  color: var(--color-green);
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+.profile p {
+  margin-bottom: 2rem;
+  font-size: .9rem;
+}
+.nav-social-items {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+.nav-social-link {
+  color: var(--white);
+  background-color: var(--color-grey-700);
+  font-weight: var(--fw-semibold);
+  padding: 0.8rem;
+  display: block;
+  border-radius: .5rem;
+}
+.nav-social-link:hover {
+  color: var(--color-grey-900);
+  background-color: var(--color-green);
+}

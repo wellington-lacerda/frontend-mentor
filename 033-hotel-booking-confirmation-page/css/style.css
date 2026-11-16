@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+@import 'reset.css';
+@import 'root.css';
+@import 'header.css';
+@import 'menu.css';
+@import 'main.css';
+@import 'booking-cards.css';
+@import 'info-cards.css';

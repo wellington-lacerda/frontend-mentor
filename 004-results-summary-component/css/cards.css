@@ -1,0 +1,66 @@
+.container {
+  padding: clamp(1rem, 5vw, 2.5rem);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.container h2 {
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
+}
+.cards {
+  display: flex;
+  flex-flow: column nowrap;
+  gap:1rem;
+}
+.card-block {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+  border-radius: .7rem;
+  padding: 1rem;
+  background-color: var(--card-background);
+}
+.card-category {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: .7rem;
+  color: var(--card-color);
+  font-weight: var(--fw-bold);
+}
+.card-numbers {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: .5rem;
+  color: var(--dark-gray-blue);
+  font-weight: var(--fw-bold);
+}
+.card-tot {
+  opacity: 50%;
+}
+.btn-continue {
+  padding: 1.1rem;
+  border-radius: 2rem;
+  background-color: var(--dark-gray-blue);
+  color: var(--color-white);
+  border: none;
+  font-weight: var(--fw-bold);
+  font-size: 1rem;
+}
+.btn-continue:active {
+  background-image: var(--gradient-background);
+}
+.catch-error {
+  color: var(--color-light-red);
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+}
+@media screen and (min-width:90rem){
+  .btn-continue:hover {
+    background-image: var(--gradient-background);
+  }
+}

@@ -1,0 +1,40 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'Intel';
+  src: '../assets/fonts/Inter-VariableFont_slnt,wght.ttf' format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  /* colors */
+  --color-green: #c5f82a;
+  --color-white: #ffffff;
+  --color-grey-700: #333333;
+  --color-grey-800: #1f1f1f;
+  --color-grey-900: #141414; 
+  /* fonts */
+  --font-sans: 'Intel', Sans-serif;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-grey-900);
+  color: var(--color-white);
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  padding: 1rem;
+}

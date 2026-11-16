@@ -1,0 +1,239 @@
+.booking-cards {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+.booking-cards img.sun {
+  align-self: center;
+  display: none;
+}
+.booking-cards .card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: clamp(15rem, 80vw, 22rem);
+  min-height: 27rem;
+  align-self: center;
+}
+.note-host-card {
+  background: linear-gradient(225deg, var(--terracotta-400),var(--terracotta-500),var(--terracotta-600),var(--terracotta-700));
+  color: var(--sun-50);
+  box-shadow: 0 25px 32px var(--shadow-hots);
+  transform: rotate(3deg);
+  z-index: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.note-start {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 2px dashed var(--terracotta-400);
+}
+.note-start span {
+  align-self: flex-start;
+  text-transform: uppercase;
+  font-size: .7rem;
+  letter-spacing: .1rem;
+  font-family: var(--DM-Mono);
+}
+.note-host {
+  margin-top: -3rem;
+}
+.note-host h2 {
+  color: var(--sun-200);
+  font-family: var(--fraunces);
+  font-weight: var(--fw-normal);
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.note-host strong {
+  font-weight: var(--fw-normal);
+  font-size: 2.5rem;
+  color: var(--sun-50);
+  margin-top: .4rem;
+}
+.note-end {
+  display: flex;
+  flex-flow: column wrap;
+}
+.note-end span {
+  font-size: .7rem;
+  text-transform: uppercase;
+  font-family: var(--DM-Mono);
+}
+.note-end strong {
+  font-weight: var(--fw-normal);
+  font-family: var(--fraunces);
+  font-size: 1.2rem;
+}
+/* card */
+.receipt-card {
+  background-color: var(--neutral-50);
+  box-shadow: 0 8px 8px var(--shadow);
+  transform: rotate(-3deg);
+  z-index: 0;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.row span {
+  font-family: var(--DM-Mono);
+  text-transform: uppercase;
+  font-size: .7rem;
+  letter-spacing: .1rem;
+}
+.container .box-date {
+  display: flex;
+  flex-flow: column wrap;
+}
+.receipt-card strong.stay {
+  font-family: var(--fraunces);
+  font-weight: var(--fw-normal);
+  font-size: 1.4rem;
+  margin-top: -2rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.flex-bord {
+  border-top: 1px solid var(--neutral-400);
+  border-bottom: 1px solid var(--neutral-400);
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.container .box-check {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .check {
+  align-self: center;
+  text-transform: uppercase;
+  font-family: var(--DM-Mono);
+  font-size: .7rem;
+  margin-bottom: 1rem;
+}
+.box-check strong {
+  font-family: var(--fraunces);
+  font-size: 2rem;
+  font-weight: var(--fw-normal);
+}
+.container .date {
+  font-size: .8rem;
+  font-weight: var(--fw-medium);
+}
+.container .box-prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  font-family: var(--DM-Sans);
+  font-size: .8rem;
+  column-gap:2rem;
+  margin-bottom: .5rem;
+}
+.box-prices span {
+  font-weight: var(--fw-medium);
+  color: var(--neutral-900);
+}
+.container .box-tot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid var(--neutral-600);
+  margin: 1rem 0;
+  padding-top: 1rem;
+}
+.box-tot span {
+  font-family: var(--DM-Mono);
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: var(--neutral-600);
+  letter-spacing: .1rem;
+}
+.box-tot strong {
+  font-family: var(--fraunces);
+  font-size: 1.5rem;
+  font-weight: var(--normal);
+}
+.container .line {
+  align-self: center;
+  font-family: var(--DM-Mono);
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: var(--neutral-600);
+}
+.hover {
+  display: none;
+}
+@media screen and (min-width:60rem){
+  .booking-cards {
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in;
+    column-gap: 0;
+    position: relative;
+    margin: -2rem auto 2rem auto;
+  }
+  .booking-cards .hover {
+    display: flex;
+    position: absolute;
+    bottom: -1rem;
+    transform: translateX(-50%);
+    font-family: var(--DM-Mono);
+    gap:.7rem;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+  }
+  .booking-cards .card {
+    width: 20rem;
+    transition: transform .5s ease-in;
+  }  
+  .booking-cards:hover {
+    column-gap: 20%;
+    width: 100%;
+  }
+  .booking-cards img.sun {
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+  .note-host-card {
+    box-shadow: -25px 25px 32px var(--shadow-hots);
+    transform: rotate(4deg);
+    margin-left: -3rem;
+  }
+  .receipt-card {
+    transform: rotate(-4deg);
+  }
+  .booking-cards:hover .note-host-card{
+    transform: rotate(-4deg);
+  }
+  .booking-cards:hover .receipt-card{
+    transform: rotate(4deg);
+  }
+  .flex-bord {
+    justify-content: space-around;
+  }
+  section.guest-info {
+    margin-top: 4rem;
+  }
+}
+@media screen and (min-width:90rem){
+  .booking-cards {
+    width: 75%;
+  }
+  .booking-cards .card {
+    width: 25rem;
+  }  
+}

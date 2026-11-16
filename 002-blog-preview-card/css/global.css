@@ -1,0 +1,28 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* colors */
+  --color-yellow: #f4d04e;
+  --color-white: #fff;
+  --color-gray-500: #6b6b6b;
+  --color-gray-950: #121212;
+  /* fonts */
+  --fonte-figtree: 'Figtree', Sans-serif;
+  --fw-medium: 500;
+  --fw-extrabold: 800;
+}
+body {
+  font-family: var(--fonte-figtree);
+  background-color: var(--color-yellow);
+  display: grid;
+  place-items:center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1.5rem;
+  font-weight: var(--fw-medium);
+}

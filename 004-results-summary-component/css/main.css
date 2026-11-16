@@ -1,0 +1,58 @@
+main {
+  width: 100%;
+  max-width: 46rem;
+}
+h1 {
+  font-size: clamp(1.2rem, 5vw, 1.6rem);
+  color: var(--color-light-lavender);
+}
+.result {
+  background-image: var(--gradient-background);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 1.8rem);
+  padding: clamp(2rem, 5vw, 2.7rem) clamp(2rem, 5vw, 3.2rem);
+  color: var(--color-white);
+  border-radius: 0 0 2rem 2rem;
+}
+.circle-result {
+  background-image: var(--gradient-circle);
+  width: clamp(9rem, 30vw, 12rem);
+  height: clamp(9rem, 30vw, 12rem);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.score-result {
+  font-size: clamp(3.5rem, 5vw, 5rem);
+  font-weight: var(--fw-extrabold);
+}
+.tot-result {
+  color: var(--color-light-lavender);
+}
+.card-info {
+  text-align: center;
+}
+.card-info h2 {
+  margin-bottom: 1rem;
+  font-weight: var(--fw-bold);
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+.txt-result {
+  font-size: 1.125rem;
+  color: var(--color-light-lavender);
+}
+@media screen and (min-width:40rem){
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-white);
+    border-radius: 2rem;
+  }
+  .result {
+    border-radius: 2rem;
+  }
+}
