@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* colors */
+  --color-green-500: #3c8067;
+  --color-green-700: #1b4133;
+
+  --color-black: #1c232b;
+  --color-grey: #6c7289;
+  --color-cream: #f2ebe3;
+  --color-white: #fff;
+  /* fonts */
+  --font-sans: 'Montserrat', Sans-serif;
+  --font-serif: 'Fraunces', Serif;
+  
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+body {
+  background-color: var(--color-cream);
+  color: var(--color-black);
+  font-family: var(--fonte-sans);
+  font-weight: var(--fw-medium);
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
