@@ -1,0 +1,104 @@
+.card {
+  background-color: var(--color-white);
+  width: 20rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.illustration-hero {
+  width: 100%;
+}
+.card-body {
+  text-align: center;
+  padding: 1.5rem;
+}
+.card-body h1 {
+  color: var(--color-blue-950);
+  font-weight: var(--fw-negrito);
+  font-size: clamp(1.5rem, 5vw, 1.8rem);
+  margin-bottom: 1.5rem;
+}
+.lead {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: .8rem;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+  gap:.3rem;
+}
+.card-plan {
+  background-color: var(--color-blue-50);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: space-between;
+}
+.card-plan .text-primary {
+  color: var(--color-blue-950);
+  font-weight: var(--fw-bold);
+}
+.card-plan a {
+  color: var(--color-blue-700);
+  font-weight: var(--fw-bold);
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+.card-plan a:active {
+  opacity: 60%;
+}
+.btn {
+  color: var(--color-gray-600);
+  font-weight: var(--fw-bold);
+  border-radius: 0.7rem;
+  background-color: transparent;
+  padding: 0.9rem;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+}
+.btn-payment {
+  background-color: var(--color-blue-700);
+  color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+.btn-payment:active {
+  opacity: 60%;
+}
+.btn-cancel:active {
+  color: var(--color-blue-950);
+}
+@media screen and (min-width: 40rem) {
+  .card {
+    width: 28rem;
+    border-radius: 1.5rem;
+  }
+  .card-body {
+    padding: 3rem;
+  }
+  .btn-payment {
+    box-shadow:  var(--shadow-md);
+  }
+  .btn-cancel {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width:90rem) {
+  .card-plan a:hover {
+    opacity: 60%;
+    cursor: pointer;
+  }
+  .btn-payment:hover {
+    opacity: 60%;
+    cursor: pointer;
+  }
+  .btn-cancel:hover {
+    color: var(--color-blue-950);
+    cursor: pointer;
+  }
+}

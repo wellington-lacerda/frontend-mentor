@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@500,700,900,&display=swap");
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  /* colors */
+  --color-white: #fff;
+  --color-blue-100: #e0e8ff;
+  --color-blue-700: #3829e0;
+  --color-blue-50: #f5f7ff;
+  --color-gray-600: #7280a7;
+  --color-blue-950: #1f2f56;
+  
+  /* fonts */
+  --font-sans: 'Red Hat Display', Sans-serif;
+  
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-negrito: 900;
+  
+  /* shadow */ 
+  --shadow-sm: 0 16px 10px #e0e8ff;
+  --shadow-md: 0 32px 15px #e0e8ff;
+}
+body {
+  background: var(--color-blue-100) url("../images/pattern-background-mobile.svg") no-repeat top center;
+  font-family: var(--font-sans);
+  color: var(--color-gray-600);
+  font-weight: var(--fw-medium);
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+}
+@media screen and (min-width:40rem){
+  body {
+    background: var(--color-blue-100) url("../images/pattern-background-desktop.svg") no-repeat top center;
+  }
+}

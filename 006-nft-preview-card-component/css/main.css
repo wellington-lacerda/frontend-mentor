@@ -1,0 +1,78 @@
+main {
+  width: 100%;
+  max-width: 22rem;
+  background-color: var(--color-blue-900);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.card-img {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.equilibrium {
+  width: 100%;
+  height: 100%;
+  object-position: center center;
+  object-fit: cover;
+}
+.card-img:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: var(--color-cyan-400) url("../images/icon-view.svg") no-repeat center center;
+  width: 100%;
+  height: 99%;
+  opacity: 60%;
+  cursor: pointer;
+}
+.card-body h1 {
+  font-weight: var(--fw-semibold);
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin: 1.4rem 0;
+  display: inline-block;
+}
+.card-body h1:hover {
+  color: var(--color-cyan-400);
+}
+.card-body p {
+  font-size: 1.125rem;
+  line-height: 1.8rem;
+  font-weight: var(--fw-light);
+}
+.text-info {
+  border-bottom: 2px solid var(--color-blue-800);
+  padding: 1rem 0rem;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: .4rem;
+}
+.ethereum span{
+  color: var(--color-cyan-400);
+  font-weight: var(--fw-semibold);
+}
+.card-perfil {
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+  column-gap: 1rem;
+}
+.card-perfil img {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+}
+.card-perfil strong {
+  color: var(--color-white);
+  font-weight: var(--fw-regular);
+}
+.card-perfil strong:hover {
+  color: var(--color-cyan-400);
+}
