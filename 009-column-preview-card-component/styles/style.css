@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 :root {
-  --gold500: hsl(31, 77%, 52%);
-  --cyan800: hsl(184, 100%, 22%);
-  --green950: hsl(179, 100%, 13%);
+  --gold500: #e38826;
+  --cyan800: #006970;
+  --green950: #004241;
 
-  --transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
-  --gray100: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+  --transparent-white: #ffffffbf; /*(paragraphs)*/
+  --gray100: #f2f2f2; /*(background, headings, buttons)*/
 
   --font-regular: normal 400 15px "Lexend Deca", Arial, Sans-serif;
   --font-semibold: normal 700 2.2rem "Big Shoulders", Arial, Sans-serif;

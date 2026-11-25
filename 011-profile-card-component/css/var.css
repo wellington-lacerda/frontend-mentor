@@ -2,10 +2,10 @@
 :root {
   /* cores */
   --white: #fff;
-  --blue600: hsl(185, 75%, 39%);
-  --navy950: hsl(229, 23%, 23%);
-  --gray500: hsl(227, 10%, 46%);
-  --gray100: hsl(225, 10%, 92%);
+  --blue600: #19a2ae;
+  --navy950: #2d3248;
+  --gray500: #6a6f81;
+  --gray100: #e9eaed;
 
   /* fontes */
   --font-var: normal 700 1rem "Kumbh Sans", Arial, Sans-serif;

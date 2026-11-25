@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap");
 :root {
   /* CORES */
-  --stone100: hsl(30, 54%, 90%);
-  --stone150: hsl(30, 18%, 87%);
-  --stone600: hsl(30, 10%, 34%);
-  --stone900: hsl(24, 5%, 18%);
+  --stone100: #f3e6d8;
+  --stone150: #e4ded8;
+  --stone600: #5f574e;
+  --stone900: #302d2c;
 
-  --brown800: hsl(14, 45%, 36%);
-  --rose800: hsl(332, 51%, 32%);
-  --rose50: hsl(330, 100%, 98%);
+  --brown800: #854632;
+  --rose800: #7b284f;
+  --rose50: #fff5fa;
   --white: #fff;
 
   /* FONTES */

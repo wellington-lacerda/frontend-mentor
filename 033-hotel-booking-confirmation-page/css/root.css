@@ -1,39 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 :root {
   /* colors */
-  --neutral-900: hsl(33, 15%, 15%);
-  --neutral-800: hsl(33, 22%, 20%);
-  --neutral-700: hsl(32, 20%, 29%);
-  --neutral-600: hsl(33, 17%, 41%);
-  --neutral-400: hsl(36, 22%, 86%);
-  --neutral-200: hsl(30, 24%, 93%);
-  --neutral-100: hsl(35, 60%, 96%);
-  --neutral-50: hsl(40, 60%, 98%);
-  --neutral-0: hsl(0, 0%, 100%);
-  --shadow: hsl(33, 17%, 41%, 20%);
-  --shadow-hots: hsl(18, 62%, 47%, 30%);
+  --neutral-900: #2c2721;
+  --neutral-800: #3e3428;
+  --neutral-700: #594b3b;
+  --neutral-600: #7a6a57;
+  --neutral-400: #e3ddd3;
+  --neutral-200: #f1ede9;
+  --neutral-100: #fbf6ef;
+  --neutral-50: #fdfbf7;
+  --neutral-0: #fff;
+  --shadow: #7a6a5733;
+  --shadow-hots: #c25a2e4d;
 
   /* ### Sun */
 
-  --sun-500: hsl(42, 83%, 58%);
-  --sun-300: hsl(44, 84%, 75%);
-  --sun-200: hsl(45, 100%, 74%);
-  --sun-50: hsl(41, 100%, 93%);
+  --sun-500: #edb73b;
+  --sun-300: #f5d88a;
+  --sun-200: #ffde7a;
+  --sun-50: #fff4db;
 
   /* ### Terracotta */
 
-  --terracotta-700: hsl(15, 69%, 37%);
-  --terracotta-600: hsl(15, 74%, 41%);
-  --terracotta-500: hsl(18, 62%, 47%);
-  --terracotta-400: hsl(22, 72%, 56%);
+  --terracotta-700: #9f3e1d;
+  --terracotta-600: #b6421b;
+  --terracotta-500: #c25a2e;
+  --terracotta-400: #e0793e;
 
   /* ### Blue */
 
-  --blue-500: hsl(230, 49%, 56%);
+  --blue-500: #586ac6;
 
   /* ### Rose */
 
-  --rose-500: hsl(340, 48%, 52%);
+  --rose-500: #bf4a71;
 
   /* fonts */
   --fs: 14px; /* (paragraph) */

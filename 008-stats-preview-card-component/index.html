@@ -2,47 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Stats preview card component</title>
 </head>
 <body>
-  <main>
-    <section class="image">
+  <main class="card-main">
+    <div class="card-img-box">
       <picture>
-        <source media="(min-width:48rem)" srcset="images/image-header-desktop.jpg" type="image/jpg">
-        <img src="images/image-header-mobile.jpg" alt="imagem de umas mulhres sentadas em um escritório conversando">
+        <source media="(min-width: 40rem)" srcset="images/image-header-desktop.jpg" type="image/jpg"> 
+        <img src="images/image-header-mobile.jpg" alt="image of a group of researchers" class="image-illustration">
       </picture>
-    </section>
-    <!-- SECTION CONTENT START -->
-    <section class="content">
-      <h1>Get <strong>insights</strong> that help your business grow.</h1>
-      <p>
-        Discover the benefits of data analytics and make better decisions
-        regarding revenue, customer experience, and overall efficiency.
+    </div>
+    <section class="card-body">
+      <h1>Get <span>insights</span> that help your business grow.</h1>
+      <p class="lead">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.
       </p>
-      <!-- DIV DATA START -->
-      <div class="data">
-        <div class="companies">
-          <strong>10k+</strong>
-          <span>companies</span>
+      <div class="stats">
+        <div class="stats__item">
+          <span class="stats__number">10k+</span>
+          <span class="stats__label">companies</span>
         </div>
-        <!-- END DIV COMPANIES -->
-        <div class="templates">
-          <strong>314</strong>
-          <span>templates</span>
+        <div class="stats__item">
+          <span class="stats__number">314</span>
+          <span class="stats__label">templates</span>
         </div>
-        <!-- END DIV TEMPLATES -->
-        <div class="queries">
-          <strong>12m+</strong>
-          <span>queries</span>
+        <div class="stats__item">
+          <span class="stats__number">12M+</span>
+          <span class="stats__label">queries</span>
         </div>
-        <!-- END DIV QUERIES -->
       </div>
-      <!-- DIV DATA END -->
     </section>
-    <!-- SECTION CONTENT END -->
   </main>
 </body>
 </html>

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* colors */
+  --color-navy-950: #090b1a; /*(main background)*/
+  --color-blue-950: #1c1a38; /*(card background)*/
+  --color-purple-500: #aa5cdb; /*(accent)*/
+
+  --color-white-primary: #fff; /*(main heading, stats)*/
+  --color-white-secondary: #ffffffbf; /*(main paragraph)*/
+  --color-white-tertiary: #ffffff99; /*(stat headings)*/
+  /* fonts */
+  --font-primary: Inter, Sans-serif;
+  --font-secondary: Lexend Deca, Sans-serif;
+  
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-navy-950);
+  color: var(--color-white-primary);
+  font-weight: var(--fw-regular);
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+}

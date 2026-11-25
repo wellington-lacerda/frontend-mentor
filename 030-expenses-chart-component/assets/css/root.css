@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 :root {
-  --Red500: hsl(10, 79%, 65%);
-  --Blue300: hsl(186, 34%, 65%);
+  --Red500: #ec775f;
+  --Blue300: #87bec4;
   
-  --Brown950: hsl(25, 47%, 15%);
-  --Brown400: hsl(28, 10%, 53%);
-  --Red100: hsl(26, 66%, 93%);
+  --Brown950: #382314;
+  --Brown400: #93867b;
+  --Red100: #f9ece1;
   
   --fs: 18px;
   

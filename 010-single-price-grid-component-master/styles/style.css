@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 :root {
-  --teal500: hsl(179, 62%, 43%);
-  --green400: hsl(71, 73%, 54%);
+  --teal500: #2ab2af;
+  --green400: #c0df34;
   --white: #fff;
 
-  --teal100: hsl(204, 43%, 93%);
-  --gray500: hsl(218, 22%, 67%);
+  --teal100: #e5eff5;
+  --gray500: #98a6bd;
   --shadow: #0000002e;
 
   --font-regular: normal 400 16px "Karla", Arial, Sans-serif;

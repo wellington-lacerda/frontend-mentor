@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 :root {
-  --Purple100: hsl(254, 88%, 90%);
-  --Purple500: hsl(256, 67%, 59%);
-  --Yellow100: hsl(31, 66%, 93%);
-  --Yellow500: hsl(39, 100%, 71%);
-  --Grey100: hsl(0, 0%, 94%);
-  --Grey200: hsl(0, 0%, 98%);
-  --White: hsl(0, 0%, 100%);
-  --Black: hsl(0, 0%, 7%);
+  --Purple100: #dacffc;
+  --Purple500: #7650dc;
+  --Yellow100: #f9eee1;
+  --Yellow500: #ffcb6b;
+  --Grey100: #f0f0f0;
+  --Grey200: #fafafa;
+  --White: #fff;
+  --Black: #121212;
 
   --FS: 18px; /* (paragraph) */
   --FF: "DM Sans", Arial, Sans-serif;

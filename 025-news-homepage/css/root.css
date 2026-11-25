@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
-  --Soft-orange: hsl(35, 77%, 62%);
-  --Soft-red: hsl(5, 85%, 63%);
-  --Off-white: hsl(36, 100%, 99%);
-  --Grayish-blue: hsl(233, 8%, 79%);
-  --Dark-grayish-blue: hsl(236, 13%, 42%);
-  --Very-dark-blue: hsl(240, 100%, 5%);
+  --Soft-orange: #e9ab53;
+  --Soft-red: #f15e50;
+  --Off-white: #fffdfa;
+  --Grayish-blue: #c5c6ce;
+  --Dark-grayish-blue: #5d5f79;
+  --Very-dark-blue: #00001a;
 
   --FS: 15px; /* (paragraph) */
   --FF: "Inter", Arial, Sans-serif;
