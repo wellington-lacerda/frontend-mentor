@@ -50,7 +50,7 @@ jobs:
 
               if [ -f "$project/package.json" ] && \
                 node -e '
-                  const p = require(process.argv[1]);
+                  const p = require(process.cwd() + "/" + process.argv[1]);
                   const d = {
                     ...p.dependencies,
                     ...p.devDependencies
