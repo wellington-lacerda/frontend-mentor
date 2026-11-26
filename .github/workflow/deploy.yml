@@ -1,0 +1,113 @@
+
+name: Deploy Frontend Mentor
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Prepare projects
+        run: |
+          mkdir -p site
+
+          for level in newbie junior; do
+
+            [ -d "$level" ] || continue
+
+            for project_dir in "$level"/*/; do
+
+              [ -d "$project_dir" ] || continue
+
+              project="${project_dir%/}"
+              name="${project##*/}"
+
+              echo "Processing: $project"
+
+              mkdir -p "site/$level/$name"
+
+              if [ -f "$project/package.json" ] && \
+                node -e '
+                  const p = require(process.argv[1]);
+                  const d = {
+                    ...p.dependencies,
+                    ...p.devDependencies
+                  };
+                  process.exit(
+                    d.react && d.vite && p.scripts?.build ? 0 : 1
+                  );
+                ' "$project/package.json"; then
+
+                echo "React/Vite project detected"
+
+                cd "$project"
+
+                if [ -f package-lock.json ]; then
+                  npm ci
+                else
+                  npm install
+                fi
+
+                npm run build -- \
+                  --base="/${GITHUB_REPOSITORY#*/}/$project/"
+
+                cd "$GITHUB_WORKSPACE"
+
+                cp -R "$project/dist/." \
+                  "site/$level/$name/"
+
+              else
+
+                echo "Static HTML project detected"
+
+                rsync -a \
+                  --exclude='.git' \
+                  --exclude='node_modules' \
+                  "$project/" "site/$level/$name/"
+
+              fi
+
+            done
+          done
+
+          touch site/.nojekyll
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

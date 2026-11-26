@@ -31,14 +31,14 @@ Os projetos estão organizados por nível de dificuldade, começando pelos mais 
 | NFT Preview Card Component | [View](./newbie/nft-preview-card-component/) |
 | Order Summary Component | [View](./newbie/order-summary-component/) |
 | Stats Preview Card Component | [View](./newbie/stats-preview-card-component/) |
-| 3-Column Preview Card Component | [View](./newbie/3-column-preview-card-component/) |
+| 3 Column Preview Card Component | [View](./newbie/3-column-preview-card-component/) |
 | Single Price Grid Component | [View](./newbie/single-price-grid-component/) |
 | Profile Card Component | [View](./newbie/profile-card-component/) |
 | Social Proof Section | [View](./newbie/social-proof-section/) |
 | Four Card Feature Zection | [View](./newbie/four-card-feature-section/) |
 | Huddle Landing Page Section | [View](./newbie/huddle-landing-page-section/) |
 | Recipe Page | [View](./newbie/recipe-page/) |
-| Faq Accordion | [View](./newbie/faq-accordion/) |
+| FAQ Accordion | [View](./newbie/faq-accordion/) |
 | Article Preview Component | [View](./newbie/article-preview-component/) |
 | Base Apparel Coming Soon | [View](./newbie/base-apparel-coming-soon/) |
 | Intro Component With Signup Form | [View](./newbie/intro-component-with-signup-form/) |
