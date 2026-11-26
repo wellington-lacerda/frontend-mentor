@@ -25,7 +25,7 @@
 body {
   background-color: var(--color-cream);
   color: var(--color-black);
-  font-family: var(--fonte-sans);
+  font-family: var(--font-sans);
   font-weight: var(--fw-medium);
   width: 100%;
   min-height: 100vh;
