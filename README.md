@@ -1,49 +1,88 @@
-## 🌟 Desafios Frontend Mentor - Portfólio de Soluções
+# 🌟 Frontend Mentor — Solutions
 
-Bem-vindo ao meu portfólio de soluções para os desafios propostos pela plataforma [Frontend Mentor](https://www.frontendmentor.io/).
+Meu repositório de soluções para os desafios do [Frontend Mentor](https://www.frontendmentor.io/).
 
-Este repositório serve como uma demonstração prática do meu desenvolvimento e proficiência em tecnologias de frontend, focando em traduzir designs profissionais em código funcional, responsivo e acessível.
-
----
-
-### 🎯 Objetivo
-
-O principal objetivo deste repositório é:
-
-1.  **Desenvolvimento de Habilidades:** Aprimorar continuamente minhas competências em HTML, CSS e JavaScript/Frameworks.
-2.  **Responsividade e Acessibilidade:** Garantir que todas as soluções sejam totalmente responsivas em diferentes dispositivos e sigam as melhores práticas de acessibilidade (ARIA).
-3.  **Organização e Padrões:** Demonstrar a capacidade de estruturar projetos de forma lógica e manter padrões de código limpo e sustentável.
+O objetivo é praticar e aprimorar minhas habilidades em desenvolvimento frontend, construindo interfaces responsivas a partir de designs profissionais.
 
 ---
 
-### 🛠️ Stack Tecnológico Principal
+## 🛠️ Technologies
 
-As soluções neste repositório são primariamente desenvolvidas utilizando o seguinte conjunto de tecnologias:
-
-| Tecnologia | Descrição |
-| :--- | :--- |
-| **HTML5** | Estruturação semântica do conteúdo. |
-| **CSS3** | Estilização, layout (Flexbox/Grid) e animações. |
-| **JavaScript (ES6+)** | Lógica de interação, manipulação de DOM e funcionalidades dinâmicas. |
-| **Sass/SCSS** | Pré-processador CSS para modularidade e variáveis (Opcional, adicione se usar). |
-| **[React/Vue/Outro Framework]** | Utilizado em desafios mais complexos (Opcional, adicione se usar). |
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 ---
 
-### 📂 Estrutura do Repositório
+## 📚 Challenges
 
-Cada desafio concluído reside em uma pasta separada, nomeada de forma clara (ex: `qr-code-component`, `news-homepage`).
+Os projetos estão organizados por nível de dificuldade, começando pelos mais simples e avançando gradualmente para os mais complexos.
 
-Dentro de cada pasta, você encontrará:
+### ![Newbie](https://img.shields.io/badge/Newbie-3B82F6?style=for-the-badge)
 
-* **`README.md`:** Informações específicas sobre o desafio, links para o *live demo* e o design original, e detalhes sobre o processo de desenvolvimento e desafios encontrados.
-* **`design/`:** Os arquivos de design (imagens JPG/Sketch/Figma) fornecidos pelo Frontend Mentor.
-* **`index.html`:** O ponto de entrada da solução.
-* **`style/` ou `css/`:** Arquivos de estilização.
-* **`js/`:** Arquivos de script para interatividade.
+| Challenge | Solution |
+|:--|:--:|
+| QR Code Component | [View](./newbie/qr-code-component/) |
+| Blog Preview Card | [View](./newbie/blog-preview-card/) |
+| Social Link Profile | [View](./newbie/social-link-profile/) |
+| Results Summary Component | [View](./newbie/results-summary-component/) |
+| Product Preview Card Component | [View](./newbie/product-preview-card-component/) |
+| NFT Preview Card Component | [View](./newbie/nft-preview-card-component/) |
+| Order Summary Component | [View](./newbie/order-summary-component/) |
+| Stats Preview Card Component | [View](./newbie/stats-preview-card-component/) |
+| 3-Column Preview Card Component | [View](./newbie/3-column-preview-card-component/) |
+| Single Price Grid Component | [View](./newbie/single-price-grid-component/) |
+| Profile Card Component | [View](./newbie/profile-card-component/) |
+| Social Proof Section | [View](./newbie/social-proof-section/) |
+| Four Card Feature Zection | [View](./newbie/four-card-feature-section/) |
+| Huddle Landing Page Section | [View](./newbie/huddle-landing-page-section/) |
+| Recipe Page | [View](./newbie/recipe-page/) |
+| Faq Accordion | [View](./newbie/faq-accordion/) |
+| Article Preview Component | [View](./newbie/article-preview-component/) |
+| Base Apparel Coming Soon | [View](./newbie/base-apparel-coming-soon/) |
+| Intro Component With Signup Form | [View](./newbie/intro-component-with-signup-form/) |
+| Ping Coming Soon Page | [View](./newbie/ping-coming-soon-page/) |
+| Interactive Rating Component | [View](./newbie/interactive-rating-component/) |
+
+
+### ![Junior](https://img.shields.io/badge/Junior-22C55E?style=for-the-badge)
+
+| Challenge | Solution |
+|:--|:--:|
+| Testimonials Grid Section | [View](./junior/testimonials-grid-section/) |
+| Fylo Data Storage Component | [View](./junior/fylo-data-storage-component/) |
+| Bento Grid | [View](./junior/bento-grid/) |
+| News Homepage | [View](./junior/news-homepage/) |
+| Agency Landing Page | [View](./junior/agency-landing-page/) |
+| Clipboard Landing Page | [View](./junior/clipboard-landing-page/) |
+| Fylo Dark Theme Landing Page | [View](./junior/fylo-dark-theme-landing-page/) |
+| Contact Form | [View](./junior/contact-form/) |
+| Expenses Chart Component | [View](./junior/expenses-chart-component/) |
+| Loopstudios Landing Page | [View](./junior/loopstudios-landing-page/) |
+| Project Tracking Intro Component | [View](./junior/project-tracking-intro-component/) |
+| Hotel Booking Confirmation page | [View](./junior/hotel-booking-confirmation-page/) |
+
+![Intermediate](https://img.shields.io/badge/Intermediate-F59E0B?style=for-the-badge)
+
+![Advanced](https://img.shields.io/badge/Advanced-EF4444?style=for-the-badge)
+
+![Guru](https://img.shields.io/badge/Guru-8B5CF6?style=for-the-badge)
 
 ---
 
-### 📝 Licença
+## 🎯 Goals
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes (se você for incluir um).
+- Improve HTML, CSS and JavaScript skills.
+- Build responsive and accessible interfaces.
+- Practice clean and maintainable code.
+- Develop problem-solving skills.
+- Track my progress through increasingly challenging projects.
+
+---
+
+## 📈 Progress
+
+Este repositório será atualizado continuamente conforme novos desafios forem concluídos.
+
+**Platform:** [Frontend Mentor](https://www.frontendmentor.io/)

@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* colors */
+  --color-gold-500: #e38826;
+  --color-cyan-800: #006970;
+  --color-green-950: #004241;
+
+  --color-transparent-white: #ffffffbf; /*(paragraphs)*/
+  --color-gray-100: #f2f2f2; /*(background, headings, buttons)*/
+  
+  /* fonts */
+  --font-primary: 'Lexend Deca', Sans-serif;
+  --font-secondary: 'Big Shoulders', Sans-serif;
+  
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+body {
+  display: grid;
+  place-items: center;
+  width: 100v%;
+  min-height: 100vh;
+  background-color: var(--color-gray-100);
+  font-family: var(--font-primary);
+  font-weight: var(--fw-regular);
+  padding: 2rem;
+}
