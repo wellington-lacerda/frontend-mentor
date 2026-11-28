@@ -51,8 +51,7 @@ function App() {
             cursor-pointer transition-colors
             active:bg-linear-to-b active:from-[#7857ff] active:to-[#2e2be9]
             hover:bg-linear-to-b hover:from-[#7857ff] hover:to-[#2e2be9]
-          "
-        >
+          ">
           Continue
         </button>
       </section>

@@ -1,0 +1,130 @@
+ .price-box {
+  width: 100%;
+  max-width: 40rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 15px 30px var(--color-shadow);
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.price-box__head,
+.price-box__plan,
+.price-box__perks {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price-box__head {
+  background-color: var(--color-white);
+  color: var(--color-gray-500);
+}
+
+.price-box__title {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  color: var(--color-teal-500);
+  margin-bottom: 1.25rem;
+}
+
+.price-box__lead {
+  font-size: clamp(0.95rem, 2.5vw, 1.125rem);
+  font-weight: var(--fw-bold);
+  color: var(--color-green-400);
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.price-box__text {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  line-height: 1.65;
+}
+
+.price-box__sub {
+  font-size: 1.125rem;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.price-box__plan {
+  background-color: var(--color-teal-500);
+  color: var(--color-white);
+}
+
+.price-box__cost {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.price-box__val {
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.price-box__unit {
+  color: var(--color-teal-100);
+  opacity: 0.7;
+  font-size: 1rem;
+}
+
+.price-box__hint {
+  font-size: 0.95rem;
+  color: var(--color-teal-100);
+  margin-bottom: 1.65rem;
+}
+
+.price-box__btn {
+  display: block;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 0.35rem;
+  background-color: var(--color-green-400);
+  color: var(--color-white);
+  font-weight: var(--fw-bold);
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  transition: filter 0.2s ease, transform 0.15s ease;
+}
+
+.price-box__btn:hover,
+.price-box__btn:focus-visible {
+  filter: brightness(1.05);
+}
+
+.price-box__btn:active {
+  transform: translateY(1px);
+}
+
+.price-box__perks {
+  background-color: color-mix(in srgb, var(--color-teal-500) 85%, white);
+  color: var(--color-teal-100);
+}
+
+.price-box__list {
+  font-size: 0.875rem;
+  line-height: 1.45;
+  opacity: 0.85;
+}
+
+@media screen and (min-width: 40rem) {
+  .price-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .price-box__head,
+  .price-box__plan,
+  .price-box__perks {
+    padding: 2.5rem;
+  }
+
+  .price-box__head {
+    grid-column: 1 / -1;
+  }
+}
